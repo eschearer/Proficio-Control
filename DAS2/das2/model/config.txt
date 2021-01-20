@@ -1,0 +1,88 @@
+tric_med_1
+1 4
+FE_FEonly.plt
+2 1
+tric_med_2
+1 4
+FE_FEonly.plt
+3 1
+tric_med_3
+1 4
+FE_FEonly.plt
+4 1
+tric_med_4
+1 4
+FE_FEonly.plt
+5 1
+tric_med_5
+1 4
+FE_FEonly.plt
+6 1
+brachialis_1
+1 4
+FE_FEonly.plt
+7 1
+brachialis_2
+1 4
+FE_FEonly.plt
+8 1
+brachialis_3
+1 4
+FE_FEonly.plt
+9 1
+brachialis_4
+1 4
+FE_FEonly.plt
+10 1
+brachialis_5
+1 4
+FE_FEonly.plt
+11 1
+brachialis_6
+1 4
+FE_FEonly.plt
+12 1
+brachialis_7
+1 4
+FE_FEonly.plt
+13 1
+tric_lat_1
+1 4
+FE_FEonly.plt
+14 1
+tric_lat_2
+1 4
+FE_FEonly.plt
+15 1
+tric_lat_3
+1 4
+FE_FEonly.plt
+16 1
+tric_lat_4
+1 4
+FE_FEonly.plt
+17 1
+tric_lat_5
+1 4
+FE_FEonly.plt
+18 1
+anconeus_1
+1 4
+FE_FEonly.plt
+19 1
+anconeus_2
+1 4
+FE_FEonly.plt
+20 1
+anconeus_3
+1 4
+FE_FEonly.plt
+21 1
+anconeus_4
+1 4
+FE_FEonly.plt
+22 1
+anconeus_5
+1 4
+FE_FEonly.plt
+23 1

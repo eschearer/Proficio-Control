@@ -1,0 +1,2716 @@
+# model.bio
+# file with joint and muscle information created by simm2bio.m, for use by SDBIO
+
+verbose_level 0
+
+joint GH_y
+   distal_body humerus_1
+   limits -90.000000 90.000000
+   end
+
+joint GH_z
+   distal_body humerus_2
+   limits 5.000000 90.000000
+   end
+
+joint GH_yy
+   distal_body humerus_r
+   limits -55.000000 70.000000
+   end
+
+joint EL_x
+   distal_body ulna_r
+   limits 5.000000 140.000000
+   end
+
+joint PS_y
+   distal_body radius_r
+   limits 5.000000 160.000000
+   end
+
+muscle default
+   a 0.25
+   vmrel 10
+   umax 0.04
+   fecmax 1.5
+   krel 1.0
+   slopfac 2.0
+   PEEslack 1.0
+end
+
+muscle delt_scap_1
+ fmax  289.00
+ lceopt   0.11280 lslack    0.08000 pennopt   5.00000 width    0.56000
+ time_constants    0.03861   0.08350
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    1.91960e-001 
+	  1   1   0    1.38387e-002 
+	  2   0   0    -2.87232e-003 
+	  0   1   0    4.94619e-002 
+	  0   2   0    -1.88328e-002 
+	  2   1   0    -1.53505e-002 
+	  1   0   0    8.37829e-003 
+	  0   0   1    4.55397e-003 
+GH_force_vectors
+parameters    4
+	  0   0   0    -6.17486e-001 
+	  0   1   0    -2.68737e-001 
+	  2   2   0    8.38936e-002 
+	  1   1   0    5.74808e-002 
+parameters    2
+	  0   0   0    8.00594e-001 
+	  0   1   0    -4.41204e-001 
+parameters    2
+	  1   1   0    3.90418e-001 
+	  0   0   0    1.82934e-001 
+end
+
+muscle delt_scap_2
+ fmax  211.00
+ lceopt   0.09490 lslack    0.07600 pennopt   5.00000 width    0.56000
+ time_constants    0.03861   0.08350
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    1.64670e-001 
+	  1   1   0    1.55593e-002 
+	  2   2   0    3.21657e-003 
+	  0   1   0    2.98180e-002 
+	  0   2   0    -1.50923e-002 
+	  2   1   0    -1.66299e-002 
+	  1   0   0    6.82619e-003 
+	  0   0   1    4.42080e-003 
+GH_force_vectors
+parameters    4
+	  0   0   0    -5.12540e-001 
+	  0   1   0    -3.03059e-001 
+	  1   2   0    9.56242e-002 
+	  2   1   0    1.10700e-001 
+parameters    2
+	  0   0   0    8.58092e-001 
+	  0   1   0    -4.10513e-001 
+parameters    2
+	  0   0   0    2.53354e-001 
+	  1   1   0    3.95195e-001 
+end
+
+muscle delt_scap_3
+ fmax  446.00
+ lceopt   0.08330 lslack    0.06200 pennopt   5.00000 width    0.56000
+ time_constants    0.03861   0.08350
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    4
+	  0   0   0    1.47950e-001 
+	  1   1   0    2.24569e-002 
+	  2   2   0    -4.97752e-003 
+	  0   3   0    -2.69148e-003 
+GH_force_vectors
+parameters    4
+	  0   1   0    -4.22810e-001 
+	  0   0   0    -2.88798e-001 
+	  1   3   0    7.46233e-002 
+	  2   1   0    1.13058e-001 
+parameters    2
+	  0   0   0    8.52110e-001 
+	  0   2   0    -2.68918e-001 
+parameters    2
+	  0   0   0    2.62560e-001 
+	  1   1   0    4.26088e-001 
+end
+
+muscle delt_scap_4
+ fmax  117.00
+ lceopt   0.06660 lslack    0.04500 pennopt   5.00000 width    0.56000
+ time_constants    0.03861   0.08350
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    1.23410e-001 
+	  1   1   0    1.77889e-002 
+	  0   2   0    -4.69578e-003 
+	  2   2   0    -3.04041e-003 
+	  1   0   0    6.39027e-003 
+	  0   0   1    4.61445e-003 
+GH_force_vectors
+parameters    4
+	  0   1   0    -4.19736e-001 
+	  0   0   0    -2.69799e-001 
+	  1   3   0    8.64403e-002 
+	  2   0   0    8.67022e-002 
+parameters    3
+	  0   0   0    8.59143e-001 
+	  0   2   0    -3.14513e-001 
+	  1   0   0    -7.77975e-002 
+parameters    3
+	  0   0   0    3.56336e-001 
+	  1   1   0    5.03223e-001 
+	  2   2   0    -1.64595e-001 
+end
+
+muscle delt_scap_5
+ fmax  285.00
+ lceopt   0.07670 lslack    0.06700 pennopt   5.00000 width    0.56000
+ time_constants    0.00833   0.03430
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    7
+	  0   0   0    1.51810e-001 
+	  1   1   0    2.16799e-002 
+	  0   2   0    -1.89552e-002 
+	  0   3   0    4.85657e-003 
+	  1   0   0    5.37941e-003 
+	  3   1   0    -2.50344e-003 
+	  0   0   1    3.10863e-003 
+GH_force_vectors
+parameters    3
+	  0   1   0    -5.72101e-001 
+	  2   2   0    1.65844e-001 
+	  0   0   0    -1.06908e-001 
+parameters    3
+	  0   0   0    9.23224e-001 
+	  0   2   0    -3.03068e-001 
+	  1   0   0    -6.47907e-002 
+parameters    2
+	  1   1   0    5.16585e-001 
+	  0   0   0    2.27858e-001 
+end
+
+muscle delt_scap_6
+ fmax  149.00
+ lceopt   0.07540 lslack    0.08200 pennopt   5.00000 width    0.56000
+ time_constants    0.00833   0.03430
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    1.66150e-001 
+	  1   1   0    3.04974e-002 
+	  0   1   0    -1.01875e-002 
+	  0   2   0    -4.81596e-003 
+	  1   2   0    -5.88661e-003 
+	  3   1   0    -2.25122e-003 
+GH_force_vectors
+parameters    2
+	  0   1   0    -6.79869e-001 
+	  2   2   0    1.89174e-001 
+parameters    2
+	  0   0   0    9.36954e-001 
+	  0   2   0    -3.32031e-001 
+parameters    2
+	  1   1   0    5.69725e-001 
+	  0   0   0    1.82549e-001 
+end
+
+muscle delt_scap_7
+ fmax  120.00
+ lceopt   0.06560 lslack    0.03500 pennopt   5.00000 width    0.56000
+ time_constants    0.00833   0.03430
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    3
+	  0   0   0    1.11690e-001 
+	  0   1   0    -1.78309e-002 
+	  1   1   0    1.47429e-002 
+GH_force_vectors
+parameters    1
+	  0   1   0    -4.97300e-001 
+parameters    2
+	  0   0   0    9.37812e-001 
+	  0   2   0    -2.95927e-001 
+parameters    4
+	  1   1   0    6.09923e-001 
+	  0   0   0    2.76214e-001 
+	  0   1   1    2.25929e-001 
+	  2   2   0    -1.36039e-001 
+end
+
+muscle delt_scap_8
+ fmax  215.00
+ lceopt   0.07100 lslack    0.06500 pennopt   5.00000 width    0.56000
+ time_constants    0.00833   0.03430
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    4
+	  0   0   0    1.43730e-001 
+	  0   2   0    -5.76983e-003 
+	  1   1   0    1.41966e-002 
+	  0   1   0    -1.29632e-002 
+GH_force_vectors
+parameters    2
+	  0   1   0    -5.93136e-001 
+	  2   2   0    1.78052e-001 
+parameters    2
+	  0   0   0    9.68600e-001 
+	  0   2   0    -3.02973e-001 
+parameters    4
+	  1   1   0    7.79442e-001 
+	  0   0   0    1.48250e-001 
+	  3   1   0    -1.71976e-001 
+	  0   1   1    1.52129e-001 
+end
+
+muscle delt_scap_9
+ fmax  286.00
+ lceopt   0.07320 lslack    0.07100 pennopt   5.00000 width    0.56000
+ time_constants    0.00833   0.03430
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    3
+	  0   0   0    1.50620e-001 
+	  0   1   0    -2.11811e-002 
+	  1   1   0    1.10372e-002 
+GH_force_vectors
+parameters    2
+	  0   1   0    -5.77643e-001 
+	  2   2   0    1.70942e-001 
+parameters    2
+	  0   0   0    9.55971e-001 
+	  0   2   0    -3.11417e-001 
+parameters    4
+	  1   1   0    3.66137e-001 
+	  0   0   0    1.15997e-001 
+	  0   0   1    2.13367e-001 
+	  1   0   0    2.29191e-001 
+end
+
+muscle delt_scap10
+ fmax  445.00
+ lceopt   0.07480 lslack    0.06400 pennopt   5.00000 width    0.56000
+ time_constants    0.00833   0.03430
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    3
+	  0   0   0    1.35840e-001 
+	  0   1   0    -2.17410e-002 
+	  1   1   0    5.72031e-003 
+GH_force_vectors
+parameters    1
+	  0   1   0    -4.43129e-001 
+parameters    2
+	  0   0   0    8.88073e-001 
+	  0   3   0    -1.98508e-001 
+parameters    3
+	  1   1   0    2.48380e-001 
+	  0   0   1    2.96917e-001 
+	  1   0   0    3.35093e-001 
+end
+
+muscle delt_scap11
+ fmax  239.00
+ lceopt   0.07370 lslack    0.04800 pennopt   5.00000 width    0.56000
+ time_constants    0.01263   0.04180
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    3
+	  0   0   0    1.21310e-001 
+	  0   1   0    -2.41412e-002 
+	  0   1   2    5.35144e-003 
+GH_force_vectors
+parameters    1
+	  0   0   0    -4.20668e-001 
+parameters    3
+	  0   0   0    8.15091e-001 
+	  0   4   0    -1.18665e-001 
+	  1   2   1    -1.02615e-001 
+parameters    2
+	  1   1   0    5.32345e-001 
+	  0   1   1    3.09069e-001 
+end
+
+muscle delt_clav_1
+ fmax  128.00
+ lceopt   0.08360 lslack    0.06200 pennopt   5.00000 width    0.56000
+ time_constants    0.01263   0.04180
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    4
+	  0   0   0    1.36640e-001 
+	  0   3   0    -4.41525e-003 
+	  1   1   0    -8.28520e-003 
+	  2   1   0    -4.56555e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -3.09202e-001 
+	  0   1   0    -4.04990e-001 
+	  2   1   0    1.91311e-001 
+parameters    2
+	  0   0   0    8.56274e-001 
+	  0   2   0    -2.19115e-001 
+parameters    1
+	  1   1   0    4.07336e-001 
+end
+
+muscle delt_clav_2
+ fmax  160.00
+ lceopt   0.09400 lslack    0.08800 pennopt   5.00000 width    0.56000
+ time_constants    0.01263   0.04180
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    4
+	  0   0   0    1.74640e-001 
+	  2   2   0    -5.87976e-003 
+	  1   1   0    -1.18052e-002 
+	  0   4   0    -2.18506e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -3.86344e-001 
+	  0   1   0    -3.67693e-001 
+	  2   1   0    1.83220e-001 
+parameters    2
+	  0   0   0    8.69846e-001 
+	  0   2   0    -2.41750e-001 
+parameters    2
+	  1   1   0    4.22553e-001 
+	  0   0   0    -8.25717e-002 
+end
+
+muscle delt_clav_3
+ fmax  105.00
+ lceopt   0.08240 lslack    0.06700 pennopt   5.00000 width    0.56000
+ time_constants    0.01263   0.04180
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    4
+	  0   0   0    1.49240e-001 
+	  0   3   0    -4.76178e-003 
+	  1   1   0    -1.25186e-002 
+	  2   0   0    -6.12550e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -3.94802e-001 
+	  0   1   0    -3.57289e-001 
+	  2   1   0    1.74500e-001 
+parameters    2
+	  0   0   0    8.59969e-001 
+	  0   2   0    -2.38699e-001 
+parameters    2
+	  1   1   0    4.03790e-001 
+	  0   0   0    -8.57748e-002 
+end
+
+muscle delt_clav_4
+ fmax  112.00
+ lceopt   0.09910 lslack    0.07300 pennopt   5.00000 width    0.56000
+ time_constants    0.01263   0.04180
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    4
+	  0   0   0    1.64310e-001 
+	  2   2   0    -5.48489e-003 
+	  1   1   0    -1.19867e-002 
+	  0   4   0    -1.64535e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -4.11714e-001 
+	  0   1   0    -3.64507e-001 
+	  2   1   0    2.00138e-001 
+parameters    2
+	  0   0   0    9.68033e-001 
+	  0   1   0    -4.25106e-001 
+parameters    2
+	  1   1   0    4.41022e-001 
+	  0   0   0    -9.11489e-002 
+end
+
+muscle coracobr_1
+ fmax  201.00
+ lceopt   0.06600 lslack    0.09200 pennopt   0.00000 width    0.56000
+ time_constants    0.01263   0.04180
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    1.56460e-001 
+	  1   1   0    -2.55279e-002 
+	  0   3   0    -2.18352e-003 
+	  1   3   0    2.62732e-003 
+	  3   1   0    2.36209e-003 
+GH_force_vectors
+parameters    2
+	  0   1   0    -7.29365e-001 
+	  2   2   0    2.46342e-001 
+parameters    2
+	  0   0   0    9.72645e-001 
+	  0   2   0    -3.69222e-001 
+parameters    1
+	  1   1   0    6.07460e-001 
+end
+
+muscle coracobr_2
+ fmax  148.00
+ lceopt   0.06830 lslack    0.10400 pennopt   0.00000 width    0.56000
+ time_constants    0.00750   0.03270
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    7
+	  0   0   0    1.71510e-001 
+	  1   1   0    -2.68366e-002 
+	  2   0   0    -4.02157e-003 
+	  1   3   0    3.40218e-003 
+	  3   0   0    2.27067e-003 
+	  0   1   0    1.19816e-002 
+	  0   2   0    -6.27399e-003 
+GH_force_vectors
+parameters    2
+	  0   1   0    -7.36228e-001 
+	  2   2   0    2.34966e-001 
+parameters    2
+	  0   0   0    9.62479e-001 
+	  0   2   0    -3.76983e-001 
+parameters    1
+	  1   1   0    6.08549e-001 
+end
+
+muscle coracobr_3
+ fmax  114.00
+ lceopt   0.07270 lslack    0.11300 pennopt   0.00000 width    0.56000
+ time_constants    0.00750   0.03270
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    1.84420e-001 
+	  1   1   0    -3.00270e-002 
+	  0   3   0    -2.20973e-003 
+	  1   3   0    3.04921e-003 
+	  3   1   0    2.81415e-003 
+GH_force_vectors
+parameters    2
+	  0   1   0    -7.21747e-001 
+	  2   2   0    2.41341e-001 
+parameters    2
+	  0   0   0    9.72107e-001 
+	  0   2   0    -3.68815e-001 
+parameters    1
+	  1   1   0    6.09125e-001 
+end
+
+muscle infra_1
+ fmax  272.00
+ lceopt   0.06330 lslack    0.03800 pennopt   0.00000 width    0.56000
+ time_constants    0.00750   0.03270
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 7
+	  0   0   0    9.63600e-002 
+	  0   0   1    1.32998e-002 
+	  1   0   0    1.03476e-002 
+	  0   2   0    -6.10571e-003 
+	  1   1   1    -9.35976e-003 
+	  0   1   2    -1.14660e-002 
+	  0   2   2    6.50287e-003 
+GH_force_vectors
+parameters    4
+	  0   0   0    -9.44533e-001 
+	  1   0   0    -4.25630e-002 
+	  0   2   1    3.34458e-002 
+	  2   0   0    2.24648e-002 
+parameters    3
+	  0   0   0    -3.55344e-001 
+	  0   1   1    -2.40420e-001 
+	  0   1   0    8.47864e-002 
+parameters    6
+	  0   0   0    7.51629e-002 
+	  1   0   0    -1.10344e-001 
+	  0   0   1    -1.00256e-001 
+	  2   1   0    1.17736e-001 
+	  1   0   1    1.24698e-001 
+	  0   0   2    9.95899e-002 
+end
+
+muscle infra_2
+ fmax  275.00
+ lceopt   0.07190 lslack    0.10700 pennopt   0.00000 width    0.56000
+ time_constants    0.00750   0.03270
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 9
+	  0   0   0    1.79050e-001 
+	  0   1   0    -9.69160e-003 
+	  0   0   1    1.05858e-002 
+	  1   0   0    9.43846e-003 
+	  2   1   0    3.41238e-003 
+	  1   1   1    -5.23778e-003 
+	  1   1   0    -3.98220e-003 
+	  0   2   0    -3.30305e-003 
+	  0   0   2    -2.59281e-003  
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.46346e-001 
+	  1   1   0    -3.95869e-002 
+	  0   2   1    1.71082e-002 
+parameters    3
+	  0   0   0    -4.94999e-001 
+	  1   1   0    5.38130e-002 
+	  0   2   1    -3.84181e-002 
+parameters    3
+	  0   0   0    1.78319e-001 
+	  1   0   0    -3.00979e-002 
+	  2   2   0    2.42326e-002 
+end
+
+muscle infra_3
+ fmax  194.00
+ lceopt   0.06770 lslack    0.08400 pennopt   0.00000 width    0.56000
+ time_constants    0.00750   0.03270
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 9
+	  0   0   0    1.53950e-001 
+	  0   1   0    -1.08660e-002 
+	  0   0   1    1.08589e-002 
+	  1   0   0    9.96558e-003 
+	  2   1   0    3.66481e-003 
+	  1   1   0    -4.57702e-003 
+	  1   1   1    -5.50854e-003 
+	  0   0   2    -2.54860e-003 
+	  0   2   0    -2.78052e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.60918e-001 
+	  1   1   0    -4.55636e-002 
+	  0   2   1    2.08099e-002 
+parameters    3
+	  0   0   0    -4.49740e-001 
+	  1   1   0    5.54561e-002 
+	  0   2   1    -5.65094e-002 
+parameters    6
+	  0   0   0    1.98085e-001 
+	  1   0   0    -3.74563e-002 
+	  0   1   0    2.02104e-002 
+	  0   0   1    -3.76404e-002 
+	  2   1   0    3.67272e-002 
+	  1   1   0    -3.86359e-002 
+end
+
+muscle infra_4
+ fmax  207.00
+ lceopt   0.06930 lslack    0.07100 pennopt   0.00000 width    0.56000
+ PEEslack 1.10
+ time_constants    0.00750   0.03270
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 7
+	  0   0   0    1.43270e-001 
+	  0   1   0    -1.82102e-002 
+	  0   0   1    1.01680e-002 
+	  2   1   0    5.76316e-003 
+	  1   0   0    9.74806e-003 
+	  1   1   0    -4.82954e-003 
+	  1   1   1    -4.27067e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -9.07770e-001 
+	  1   1   0    -4.85979e-002 
+parameters    3
+	  0   0   0    -3.50707e-001 
+	  0   1   1    -9.57043e-002 
+	  0   2   0    4.42341e-002 
+parameters    4
+	  0   0   0    2.20659e-001 
+	  1   1   0    -1.30679e-001 
+	  0   1   0    4.39085e-002 
+	  3   1   0    3.21437e-002 
+end
+
+muscle infra_5
+ fmax  302.00
+ lceopt   0.06980 lslack    0.05000 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01205   0.04070
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 7
+	  0   0   0    1.28750e-001 
+	  0   1   0    -2.16592e-002 
+	  2   1   0    6.42407e-003 
+	  0   0   1    9.20508e-003 
+	  1   0   0    6.90557e-003 
+	  1   1   1    -5.40963e-003 
+	  0   4   0    8.24260e-004  
+GH_force_vectors
+parameters    2
+	  0   0   0    -9.62935e-001 
+	  1   1   0    -3.45548e-002 
+parameters    3
+	  0   0   0    -1.25328e-001 
+	  0   3   0    4.71023e-002 
+	  0   1   1    -7.95370e-002 
+parameters    2
+	  0   0   0    2.32085e-001 
+	  1   1   0    -1.29411e-001 
+end
+
+muscle infra_6
+ fmax  182.00
+ lceopt   0.07530 lslack    0.03500 pennopt   0.00000 width    0.56000
+ PEEslack 1.10
+ time_constants    0.01205   0.04070
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 7
+	  0   0   0    1.12700e-001 
+	  0   1   0    -1.54517e-002 
+	  0   0   1    1.09986e-002 
+	  1   0   0    1.18365e-002 
+	  1   1   1    -7.11726e-003 
+	  2   2   0    3.55716e-003 
+	  1   1   0    -4.28567e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -9.51158e-001 
+	  1   1   0    -5.41152e-002 
+	  0   1   0    5.65994e-002 
+parameters    2
+	  0   1   0    1.49245e-001 
+	  0   1   1    -1.39130e-001 
+parameters    3
+	  0   0   0    3.30328e-001 
+	  1   1   0    -1.36391e-001 
+	  0   1   0    6.24397e-002 
+end
+
+muscle ter_min_1
+ fmax  122.00
+ lceopt   0.05010 lslack    0.04900 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01205   0.04070
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 5
+	  0   0   0    1.08210e-001 
+	  0   0   1    1.31504e-002 
+	  1   0   0    1.13222e-002 
+	  0   1   0    1.31719e-002 
+	  0   2   0    -5.57653e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.93721e-001 
+	  0   1   0    1.06352e-001 
+	  1   1   0    -5.75907e-002 
+parameters    3
+	  0   0   0    -4.28225e-001 
+	  0   1   0    -1.43269e-001 
+	  1   1   0    1.07393e-001 
+parameters    3
+	  0   0   0    1.64295e-001 
+	  1   0   0    9.43751e-002 
+	  0   0   1    7.06222e-002 
+end
+
+muscle ter_min_2
+ fmax  195.00
+ lceopt   0.05500 lslack    0.05100 pennopt   0.00000 width    0.56000
+ PEEslack 1.40
+ time_constants    0.01205   0.04070
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 10
+	  0   0   0    1.23310e-001 
+	  0   0   1    1.43898e-002 
+	  1   0   0    1.40319e-002 
+	  1   1   1    -1.80624e-003 
+	  0   0   2    -5.55414e-003 
+	  0   4   0    -1.16837e-003 
+	  4   0   0    -1.16810e-003 
+	  1   0   1    -7.38863e-003 
+	  0   1   0    4.44027e-003 
+	  1   1   0    -3.16297e-003 
+GH_force_vectors
+parameters    4
+	  0   0   0    -8.86597e-001 
+	  0   1   0    1.43313e-001 
+	  0   2   1    4.13470e-002 
+	  1   2   1    5.99273e-002 
+parameters    4
+	  0   0   0    -4.27980e-001 
+	  0   1   0    -1.73552e-001 
+	  1   0   0    5.65384e-002 
+	  0   1   2    6.79072e-002 
+parameters    5
+	  0   0   0    2.27983e-001 
+	  1   0   0    1.47302e-001 
+	  0   0   1    1.30891e-001 
+	  1   3   0    -3.38385e-002 
+	  0   2   0    2.88627e-002 
+end
+
+muscle ter_min_3
+ fmax  180.00
+ lceopt   0.05060 lslack    0.01800 pennopt   0.00000 width    0.56000
+ PEEslack 1.40
+ time_constants    0.01205   0.04070
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters 7
+	  0   0   0    8.33000e-002 
+	  0   0   1    1.38807e-002 
+	  1   0   0    1.28780e-002 
+	  1   1   1    -3.23563e-003 
+	  0   0   2    -4.73603e-003 
+	  2   0   0    -3.56216e-003 
+	  1   0   1    -6.39522e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -9.64963e-001 
+	  0   1   0    1.21508e-001 
+	  1   3   0    -4.16543e-002 
+parameters    3
+	  0   0   0    -2.41506e-001 
+	  1   1   0    1.60695e-001 
+	  0   1   0    -1.99292e-001 
+parameters    3
+	  0   0   0    1.92123e-001 
+	  1   0   0    1.08876e-001 
+	  0   0   1    1.02752e-001 
+end
+
+muscle ter_maj_1
+ fmax  165.00
+ lceopt   0.14110 lslack    0.00600 pennopt   0.00000 width    0.56000
+ time_constants    0.01205   0.04070
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    1.08570e-001 
+	  0   1   0    5.56442e-002 
+	  2   1   0    -1.42082e-002 
+	  0   0   1    -8.26043e-003 
+	  1   1   0    7.04445e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -8.95350e-001 
+	  1   1   0    1.01881e-001 
+parameters    2
+	  0   1   0    -2.03937e-001 
+	  0   0   0    -1.00767e-001 
+parameters    2
+	  0   0   0    2.96183e-001 
+	  1   1   0    2.98823e-001 
+end
+
+muscle ter_maj_2
+ fmax   85.00
+ lceopt   0.15950 lslack    0.01200 pennopt   0.00000 width    0.56000
+ time_constants    0.01016   0.03760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    1.31150e-001 
+	  0   1   0    7.63211e-002 
+	  2   1   0    -1.80365e-002 
+	  1   1   0    8.65201e-003 
+	  0   4   0    -2.26054e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -9.20977e-001 
+	  3   1   0    7.84238e-002 
+parameters    1
+	  0   1   0    -2.50879e-001 
+parameters    2
+	  0   0   0    2.65183e-001 
+	  1   1   0    3.27864e-001 
+end
+
+muscle ter_maj_3
+ fmax  200.00
+ lceopt   0.15260 lslack    0.01500 pennopt   0.00000 width    0.56000
+ time_constants    0.01016   0.03760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    1.23800e-001 
+	  0   1   0    6.56216e-002 
+	  2   1   0    -1.72379e-002 
+	  1   1   0    1.21634e-002 
+	  0   4   0    -2.13381e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -8.94204e-001 
+	  1   1   0    1.29610e-001 
+parameters    2
+	  0   3   0    -1.29749e-001 
+	  0   0   0    4.69443e-002 
+parameters    2
+	  0   0   0    3.58437e-001 
+	  1   1   0    3.22617e-001 
+end
+
+muscle ter_maj_4
+ fmax  158.00
+ lceopt   0.10930 lslack    0.03400 pennopt   0.00000 width    0.56000
+ time_constants    0.01016   0.03760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    9.72300e-002 
+	  0   1   0    4.22701e-002 
+	  2   1   0    -1.15456e-002 
+	  0   0   1    -9.59691e-003 
+	  1   1   0    1.07956e-002 
+	  1   0   0    -8.54054e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -8.66433e-001 
+	  1   1   0    1.06389e-001 
+parameters    2
+	  0   0   0    -2.26024e-001 
+	  0   2   0    -9.52073e-002 
+parameters    2
+	  0   0   0    3.56504e-001 
+	  1   1   0    2.49816e-001 
+end
+
+muscle supra_1
+ fmax  120.00
+ lceopt   0.05410 lslack    0.01700 pennopt   0.00000 width    0.56000
+ PEEslack 1.10
+ time_constants    0.01016   0.03760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    8.16900e-002 
+	  0   1   0    -1.81308e-002 
+	  1   1   1    -1.36121e-002 
+	  0   0   1    6.26422e-003 
+	  1   0   0    6.41529e-003 
+	  1   1   0    -3.88268e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -9.45901e-001 
+	  0   1   1    7.16356e-002 
+	  0   2   0    1.84691e-002 
+parameters    4
+	  0   0   0    8.62174e-002 
+	  0   2   2    8.55753e-002 
+	  0   1   1    -5.19113e-002 
+	  0   1   0    -4.22444e-002 
+parameters    7
+	  0   0   0    2.54990e-001 
+	  0   1   1    4.30594e-002 
+	  0   1   0    9.42791e-002 
+	  1   1   1    7.08996e-002 
+	  1   0   0    1.47795e-001 
+	  1   3   0    -9.33104e-002 
+	  0   0   1    2.05510e-001 
+end
+
+muscle supra_2
+ fmax  113.00
+ lceopt   0.05910 lslack    0.02500 pennopt   0.00000 width    0.56000
+ time_constants    0.01016   0.03760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    8.82100e-002 
+	  0   1   0    -1.71401e-002 
+	  1   1   1    -1.28560e-002 
+	  0   0   1    8.39048e-003 
+	  1   0   0    9.19007e-003 
+	  1   1   0    -6.27539e-003 
+GH_force_vectors
+parameters    4
+	  0   0   0    -8.88134e-001 
+	  0   1   1    8.97925e-002 
+	  0   2   0    3.62905e-002 
+	  1   1   1    4.65986e-002 
+parameters    3
+	  0   0   0    1.55475e-001 
+	  0   1   1    -5.75368e-002 
+	  0   1   2    6.77283e-002 
+parameters    7
+	  0   0   0    3.66788e-001 
+	  0   1   1    2.93866e-002 
+	  0   1   0    1.16308e-001 
+	  1   1   1    8.26388e-002 
+	  1   0   0    1.26080e-001 
+	  1   3   0    -8.03328e-002 
+	  0   0   1    1.73696e-001 
+end
+
+muscle supra_3
+ fmax  258.00
+ lceopt   0.05640 lslack    0.05200 pennopt   0.00000 width    0.56000
+ time_constants    0.01016   0.03760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters   15
+	  0   0   0    9.27300e-002 
+	  0   1   0    -2.36419e-002 
+	  1   0   0    -8.31912e-003 
+	  1   1   1    -1.15383e-002 
+	  0   2   0    5.13071e-003 
+	  0   0   3    -1.65809e-003 
+	  0   2   1    5.06431e-003 
+	  0   0   1    -5.39338e-003 
+	  2   2   0    3.73594e-003 
+	  1   2   1    5.78314e-003 
+	  0   0   2    -3.28817e-003 
+	  1   1   0    -5.59996e-003 
+	  3   1   0    1.87768e-003 
+	  1   0   1    -6.79996e-003 
+	  2   0   0    -2.87389e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -9.33555e-001 
+	  0   1   1    6.08724e-002 
+	  0   3   0    1.66008e-002 
+parameters    3
+	  0   0   0    2.01899e-001 
+	  0   2   0    5.56152e-002 
+	  0   1   1    7.48884e-002 
+parameters    4
+	  0   0   0    2.89095e-001 
+	  1   2   0    -1.01291e-001 
+	  0   0   1    8.69595e-002 
+	  1   0   0    5.77686e-002 
+end
+
+muscle supra_4
+ fmax  130.00
+ lceopt   0.05540 lslack    0.03100 pennopt   0.00000 width    0.56000
+ time_constants    0.01576   0.04700
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters   12
+	  0   0   0    6.97400e-002 
+	  0   1   0    -2.60432e-002 
+	  1   0   0    -1.13694e-002 
+	  1   1   1    -1.64935e-002 
+	  0   2   0    7.03576e-003 
+	  0   0   3    -6.38679e-004 
+	  0   2   1    2.03534e-003 
+	  0   0   1    -1.04015e-002 
+	  2   2   0    3.35108e-003 
+	  1   2   1    6.85059e-003 
+	  0   1   1    8.90315e-003 
+	  1   1   2    3.99388e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -9.42866e-001 
+	  0   1   1    6.86667e-002 
+	  0   3   0    2.52517e-002 
+parameters    3
+	  0   0   0    2.70095e-001 
+	  0   3   0    5.28054e-002 
+	  0   1   1    9.59000e-002 
+parameters    3
+	  0   0   0    1.82584e-001 
+	  1   2   0    -9.67008e-002 
+	  0   0   1    8.28438e-002 
+end
+
+muscle subscap_1
+ fmax   44.00
+ lceopt   0.05560 lslack    0.02800 pennopt   0.00000 width    0.56000
+ time_constants    0.01576   0.04700
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    5.84300e-002 
+	  1   0   0    -1.78414e-002 
+	  0   0   1    -1.92293e-002 
+	  0   3   0    2.47808e-003 
+	  0   1   1    9.22580e-003 
+	  1   1   1    6.25093e-003 
+	  2   0   0    6.27094e-003 
+	  1   0   1    5.34385e-003 
+GH_force_vectors
+parameters    4
+	  0   0   0    -8.10481e-001 
+	  1   0   0    -8.34479e-002 
+	  0   0   1    -5.07691e-002 
+	  0   2   0    1.97129e-002 
+parameters    2
+	  0   1   0    2.61206e-001 
+	  0   1   1    1.44380e-001 
+parameters    5
+	  0   0   0    5.92764e-001 
+	  3   0   0    -3.59507e-002 
+	  0   0   1    -1.53093e-001 
+	  1   0   0    -1.45451e-001 
+	  0   1   0    -6.66714e-002 
+end
+
+muscle subscap_2
+ fmax   78.00
+ lceopt   0.06490 lslack    0.04400 pennopt   0.00000 width    0.56000
+ time_constants    0.01576   0.04700
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters   12
+	  0   0   0    9.41800e-002 
+	  1   0   0    -1.47350e-002 
+	  0   2   0    8.29776e-003 
+	  2   0   0    1.12007e-002 
+	  1   0   1    1.99212e-002 
+	  0   0   1    -1.49458e-002 
+	  0   1   1    1.02144e-002 
+	  0   0   2    1.04011e-002 
+	  0   1   2    -9.76029e-003 
+	  1   1   0    2.91033e-003 
+	  2   2   0    -2.06472e-003 
+	  1   1   1    -4.54006e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.91732e-001 
+	  0   1   0    8.34389e-002 
+	  1   0   0    -2.60325e-002 
+parameters    4
+	  0   0   0    3.07749e-001 
+	  0   1   0    1.86787e-001 
+	  0   1   1    1.18464e-001 
+	  1   1   0    6.55369e-002 
+parameters    3
+	  0   0   0    2.98393e-001 
+	  1   0   0    -2.10413e-001 
+	  0   0   1    -1.79124e-001 
+end
+
+muscle subscap_3
+ fmax  264.00
+ lceopt   0.06760 lslack    0.05900 pennopt   5.00000 width    0.56000
+ time_constants    0.01576   0.04700
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters   12
+	  0   0   0    9.27100e-002 
+	  1   0   0    -1.99003e-002 
+	  0   0   1    -1.98874e-002 
+	  0   1   1    9.90453e-003 
+	  2   0   0    4.13598e-003 
+	  0   1   0    -1.39904e-002 
+	  0   2   0    6.42022e-003 
+	  1   0   1    2.87021e-003 
+	  1   1   2    5.79399e-003 
+	  3   1   0    2.86683e-003 
+	  2   1   1    4.14126e-003 
+	  1   1   0    -2.95054e-003 
+GH_force_vectors
+parameters    5
+	  0   0   0    -8.92807e-001 
+	  1   1   0    -5.82295e-002 
+	  2   0   0    -2.03397e-002 
+	  1   2   0    2.51507e-002 
+	  1   0   1    -1.54092e-002 
+parameters    3
+	  0   3   0    6.14273e-002 
+	  0   1   1    1.24720e-001 
+	  0   0   0    -3.05667e-002 
+parameters    3
+	  0   0   0    4.38390e-001 
+	  1   1   0    -6.97851e-002 
+	  2   1   0    -4.09096e-002 
+end
+
+muscle subscap_4
+ fmax  274.00
+ lceopt   0.07440 lslack    0.05500 pennopt   5.00000 width    0.56000
+ time_constants    0.01576   0.04700
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    8.94700e-002 
+	  1   0   0    -2.19196e-002 
+	  0   0   1    -2.14097e-002 
+	  0   2   1    6.01685e-003 
+	  0   1   0    -5.17364e-003 
+	  1   1   2    4.21449e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.07765e-001 
+	  0   1   1    -2.44375e-002 
+	  2   2   0    -1.68943e-002 
+parameters    4
+	  0   0   0    -2.54267e-001 
+	  0   1   1    1.28477e-001 
+	  1   0   0    -4.43258e-002 
+	  0   2   0    3.65137e-002 
+parameters    2
+	  0   0   0    5.35339e-001 
+	  2   2   0    -3.37537e-002 
+end
+
+muscle subscap_5
+ fmax  114.00
+ lceopt   0.07970 lslack    0.06600 pennopt   0.00000 width    0.56000
+ time_constants    0.01576   0.04700
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    9.09400e-002 
+	  1   0   0    -1.96015e-002 
+	  0   0   1    -2.07412e-002 
+	  0   1   0    -7.93282e-003 
+	  0   3   1    2.63152e-003 
+GH_force_vectors
+parameters    5
+	  0   0   0    -7.60465e-001 
+	  0   1   1    -2.72434e-002 
+	  0   2   0    -7.57961e-003 
+	  1   0   0    1.78036e-002 
+	  2   1   0    -1.79107e-002 
+parameters    4
+	  0   0   0    -4.03984e-001 
+	  1   1   0    -7.75156e-002 
+	  0   1   1    1.07591e-001 
+	  0   2   0    2.54906e-002 
+parameters    2
+	  0   0   0    4.94988e-001 
+	  3   1   0    -4.01201e-002 
+end
+
+muscle subscap_6
+ fmax  149.00
+ lceopt   0.07620 lslack    0.07700 pennopt   0.00000 width    0.56000
+ time_constants    0.01277   0.04210
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    1.14540e-001 
+	  0   0   1    -2.23898e-002 
+	  1   0   0    -2.05254e-002 
+	  0   3   1    2.49367e-003 
+	  1   1   2    4.31472e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -7.71238e-001 
+	  1   0   0    4.11102e-002 
+	  0   3   1    -1.94011e-002 
+parameters    3
+	  0   0   0    -4.21858e-001 
+	  1   1   0    -8.50899e-002 
+	  0   1   1    6.02024e-002 
+parameters    2
+	  0   0   0    4.83409e-001 
+	  2   1   0    -4.00577e-002 
+end
+
+muscle subscap_7
+ fmax  162.00
+ lceopt   0.08200 lslack    0.07900 pennopt   0.00000 width    0.56000
+ time_constants    0.01277   0.04210
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    3
+	  0   0   0    1.12860e-001 
+	  0   0   1    -2.19361e-002 
+	  1   0   0    -1.77374e-002 
+GH_force_vectors
+parameters    3
+	  0   0   0    -7.24645e-001 
+	  1   1   0    7.85183e-002 
+	  2   2   0    -2.56416e-002 
+parameters    5
+	  0   0   0    -5.35724e-001 
+	  1   1   0    -4.51100e-002 
+	  1   0   0    -4.54159e-002 
+	  0   3   1    2.52987e-002 
+	  0   3   0    1.22349e-002 
+parameters    2
+	  0   0   0    4.32933e-001 
+	  2   1   0    -4.28781e-002 
+end
+
+muscle subscap_8
+ fmax   61.00
+ lceopt   0.07650 lslack    0.04000 pennopt   0.00000 width    0.56000
+ time_constants    0.00889   0.03530
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    3
+	  0   0   0    6.99900e-002 
+	  0   0   1    -2.16666e-002 
+	  1   0   0    -1.84179e-002 
+GH_force_vectors
+parameters    3
+	  0   0   0    -7.08754e-001 
+	  1   1   0    1.04822e-001 
+	  2   2   0    -3.68404e-002 
+parameters    5
+	  0   0   0    -4.63159e-001 
+	  1   1   0    -6.68348e-002 
+	  1   0   0    -6.42960e-002 
+	  0   2   1    5.73253e-002 
+	  0   3   0    2.05578e-002 
+parameters    2
+	  0   0   0    5.27787e-001 
+	  2   1   0    -5.90908e-002 
+end
+
+muscle subscap_9
+ fmax  222.00
+ lceopt   0.07210 lslack    0.05900 pennopt   0.00000 width    0.56000
+ time_constants    0.00889   0.03530
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    9.36200e-002 
+	  0   0   1    -2.05298e-002 
+	  1   0   0    -1.77291e-002 
+	  0   4   0    7.87842e-004 
+	  1   1   0    3.91441e-003 
+	  2   2   0    -1.67833e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -6.68428e-001 
+	  1   1   0    8.92877e-002 
+	  0   2   0    -3.13749e-002 
+parameters    5
+	  0   0   0    -5.63214e-001 
+	  1   0   0    -4.71460e-002 
+	  0   2   0    2.47015e-002 
+	  1   1   0    -5.74591e-002 
+	  0   0   2    -2.93913e-002 
+parameters    3
+	  0   0   0    4.68159e-001 
+	  2   1   0    -5.39669e-002 
+	  1   3   0    2.19934e-002 
+end
+
+muscle subscap10
+ fmax   47.00
+ lceopt   0.06760 lslack    0.01000 pennopt   0.00000 width    0.56000
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    4.75600e-002 
+	  0   0   1    -1.38926e-002 
+	  0   1   0    1.44236e-002 
+	  1   0   0    -1.31930e-002 
+	  2   1   0    -5.49479e-003 
+	  1   1   0    6.63178e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -7.32158e-001 
+	  1   1   0    1.31068e-001 
+	  0   1   0    -7.45864e-002 
+parameters    2
+	  0   0   0    -2.31726e-001 
+	  1   1   0    -8.84168e-002 
+parameters    3
+	  0   0   0    6.45161e-001 
+	  1   1   0    1.58256e-001 
+	  0   1   0    -1.39243e-001 
+end
+
+muscle subscap11
+ fmax   16.00
+ lceopt   0.06430 lslack    0.0100 pennopt   0.00000 width    0.56000
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    3.60500e-002 
+	  0   1   0    1.89992e-002 
+	  0   0   1    -1.13667e-002 
+	  2   1   0    -5.07964e-003 
+	  1   0   0    -1.05673e-002 
+	  1   1   0    7.84294e-003 
+	  1   1   1    3.80875e-003 
+	  0   2   1    2.47538e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -7.99091e-001 
+	  1   1   0    1.31264e-001 
+	  0   1   0    -6.98744e-002 
+parameters    2
+	  0   2   0    -5.27506e-002 
+	  0   0   1    7.33735e-002 
+parameters    3
+	  0   0   0    6.05322e-001 
+	  1   1   0    2.49211e-001 
+	  0   1   0    -1.95746e-001 
+end
+
+muscle bic_l
+ fmax  347.00
+ lceopt   0.12920 lslack    0.23350 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     EL_x
+     PS_y
+     end
+ parameters    16
+	  0   0   0   0   0    4.01990e-001 
+	  0   0   0   1   0    -1.64497e-002 
+	  0   0   0   3   0    7.80114e-003 
+	  0   0   0   2   0    -2.96460e-002 
+	  0   1   1   0   0    9.43241e-003 
+	  0   0   2   0   0    4.59348e-003 
+	  1   0   0   0   0    6.20877e-003 
+	  0   2   1   0   0    -3.43978e-003 
+	  0   1   0   0   0    -1.72927e-002 
+	  0   3   0   0   0    4.00617e-003 
+	  0   0   0   0   1    3.75922e-003 
+	  0   0   1   0   0    8.03098e-003 
+	  0   0   3   0   0    -1.50646e-003 
+	  0   1   2   0   0    3.31363e-003 
+	  1   0   1   0   0    4.98470e-003 
+	  2   0   0   0   0    2.26285e-003 
+GH_force_vectors
+parameters    1
+	  0   0   0   0   0    -6.03984e-001 
+parameters    1
+	  0   2   0   0   0    1.85531e-001 
+parameters    1
+	  0   1   1   0   0    6.38739e-001 
+end
+
+muscle bic_b_1
+ fmax  173.00
+ lceopt   0.11700 lslack    0.19130 pennopt   0.00000 width    0.56000
+ PEEslack 1.50
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     EL_x
+     PS_y
+     end
+ parameters    11
+	  0   0   0   0   0    3.79370e-001 
+	  0   0   0   1   0    -1.99389e-002 
+	  1   1   0   0   0    -3.47507e-002 
+	  0   0   0   3   0    8.04193e-003 
+	  0   0   0   2   0    -2.86183e-002 
+	  1   2   0   0   0    1.01254e-002 
+	  0   3   0   0   0    -2.20471e-003 
+	  3   0   0   0   0    3.46892e-003 
+	  0   0   0   0   1    3.73523e-003 
+	  2   0   0   0   0    -2.57569e-003 
+	  1   0   0   0   0    -6.29110e-003 
+ GH_force_vectors
+parameters    2
+	  0   1   0   0   0    -7.92017e-001 
+	  2   2   0   0   0    2.89636e-001 
+parameters    2
+	  0   0   0   0   0    9.61857e-001 
+	  0   2   0   0   0    -4.26387e-001 
+parameters    1
+	  1   1   0   0   0    6.45788e-001 
+end
+
+muscle bic_b_2
+ fmax  322.00
+ lceopt   0.11490 lslack    0.19270 pennopt   0.00000 width    0.56000
+ PEEslack 1.60
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     EL_x
+     PS_y
+     end
+ parameters    11
+	  0   0   0   0   0    3.79370e-001 
+	  0   0   0   1   0    -1.99389e-002 
+	  1   1   0   0   0    -3.47507e-002 
+	  0   0   0   3   0    8.04193e-003 
+	  0   0   0   2   0    -2.86183e-002 
+	  1   2   0   0   0    1.01254e-002 
+	  0   3   0   0   0    -2.20471e-003 
+	  3   0   0   0   0    3.46892e-003 
+	  0   0   0   0   1    3.73523e-003 
+	  2   0   0   0   0    -2.57569e-003 
+	  1   0   0   0   0    -6.29110e-003 
+GH_force_vectors
+parameters    2
+	  0   1   0   0   0    -7.92017e-001 
+	  2   2   0   0   0    2.89636e-001 
+parameters    2
+	  0   0   0   0   0    9.61857e-001 
+	  0   2   0   0   0    -4.26387e-001 
+parameters    1
+	  1   1   0   0   0    6.45788e-001 
+end
+
+muscle tric_l_1
+ fmax  223.00
+ lceopt   0.10080 lslack    0.20410 pennopt  10.00000 width    0.56000
+ PEEslack 1.50
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     EL_x
+     end
+ parameters    7
+	  0   0   0   0    3.11250e-001 
+	  0   1   0   1    1.42203e-005 
+	  1   1   0   0    1.51280e-002 
+	  2   1   0   1    5.16717e-007 
+	  0   1   0   0    3.61805e-002 
+	  0   0   0   1    1.88439e-002 
+	  2   1   0   0    -1.14626e-002 
+GH_force_vectors
+parameters    3
+	  0   1   0   0    -1.13836e+000 
+	  2   2   0   0    2.34978e-001 
+	  0   2   0   0    2.99677e-001 
+parameters    2
+	  0   0   0   0    9.47117e-001 
+	  0   2   0   0    -4.25098e-001 
+parameters    1
+	  1   1   0   0    6.40157e-001 
+end
+
+muscle tric_l_2
+ fmax  296.00
+ lceopt   0.08810 lslack    0.21930 pennopt  10.00000 width    0.56000
+ PEEslack 1.50
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     EL_x
+     end
+ parameters    7
+	  0   0   0   0    3.11910e-001 
+	  0   1   0   1    8.21884e-006 
+	  2   0   0   0    -1.07551e-003 
+	  0   0   0   1    1.88949e-002 
+	  0   1   0   0    2.88700e-002 
+	  2   1   0   0    -7.57035e-003 
+	  1   1   0   0    5.02123e-003 
+GH_force_vectors
+parameters    3
+	  0   1   0   0    -1.15688e+000 
+	  2   2   0   0    2.34557e-001 
+	  0   2   0   0    3.16167e-001 
+parameters    2
+	  0   0   0   0    9.42952e-001 
+	  0   2   0   0    -4.36832e-001 
+parameters    1
+	  1   1   0   0    6.56363e-001 
+end
+
+muscle tric_l_3
+ fmax  283.00
+ lceopt   0.11830 lslack    0.21800 pennopt  10.00000 width    0.56000
+ PEEslack 1.40
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     EL_x
+     end
+ parameters    6
+	  0   0   0   0    3.42600e-001 
+	  0   1   0   1    1.25171e-005 
+	  1   1   0   0    1.06079e-002 
+	  0   0   0   1    1.88986e-002 
+	  0   1   0   0    2.67184e-002 
+	  2   1   0   0    -8.29014e-003 
+GH_force_vectors
+parameters    3
+	  0   1   0   0    -1.14024e+000 
+	  2   2   0   0    2.38127e-001 
+	  0   2   0   0    3.02014e-001 
+parameters    2
+	  0   0   0   0    9.46627e-001 
+	  0   2   0   0    -4.34530e-001 
+parameters    1
+	  1   1   0   0    6.54665e-001 
+end
+
+muscle tric_l_4
+ fmax  327.00
+ lceopt   0.12260 lslack    0.21970 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     EL_x
+     end
+ parameters    7
+	  0   0   0   0    3.36390e-001 
+	  0   1   0   1    1.06045e-005 
+	  2   0   0   0    -1.12486e-003 
+	  0   0   0   1    1.88916e-002 
+	  0   1   0   0    2.88323e-002 
+	  2   1   0   0    -7.53406e-003 
+	  1   1   0   0    5.03233e-003 
+GH_force_vectors
+parameters    3
+	  0   1   0   0    -6.18690e-001 
+	  2   2   0   0    2.28399e-001 
+	  0   0   0   0    -1.73504e-001 
+parameters    2
+	  0   0   0   0    9.39869e-001 
+	  0   2   0   0    -4.39533e-001 
+parameters    1
+	  1   1   0   0    6.57467e-001 
+end
+
+muscle lat_dorsi_1
+ fmax   56.00
+ lceopt   0.23430 lslack    0.09000 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    2.19820e-001 
+	  0   1   0    3.43475e-002 
+	  2   1   0    -1.18934e-002 
+	  0   0   1    -1.48704e-002 
+	  1   0   0    -1.46908e-002 
+	  0   3   0    -3.29245e-003 
+	  1   1   0    7.76722e-003 
+	  0   2   1    4.54805e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -9.58213e-001 
+	  1   1   0    3.18282e-002 
+parameters    2
+	  0   1   0    -1.09007e-001 
+	  0   1   1    4.67778e-002 
+parameters    2
+	  0   0   0    2.60545e-001 
+	  1   1   0    1.06767e-001 
+end
+
+muscle lat_dorsi_2
+ fmax   88.00
+ lceopt   0.28570 lslack    0.08300 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    7
+	  0   0   0    2.50900e-001 
+	  0   1   0    4.18207e-002 
+	  2   1   0    -1.28090e-002 
+	  0   0   1    -1.27472e-002 
+	  1   0   0    -1.29897e-002 
+	  0   4   0    -1.54331e-003 
+	  1   1   0    6.97030e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -9.21054e-001 
+	  1   1   0    3.50254e-002 
+parameters    3
+	  0   0   0    -2.71645e-001 
+	  0   2   0    -4.70448e-002 
+	  0   1   1    3.24826e-002 
+parameters    2
+	  0   0   0    2.27813e-001 
+	  1   1   0    1.06823e-001 
+end
+
+muscle lat_dorsi_3
+ fmax  129.00
+ lceopt   0.29510 lslack    0.10500 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    7
+	  0   0   0    2.83490e-001 
+	  0   1   0    4.26269e-002 
+	  2   1   0    -1.19808e-002 
+	  0   0   1    -1.34059e-002 
+	  1   0   0    -1.27820e-002 
+	  1   1   0    6.33106e-003 
+	  0   4   0    -1.14623e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.85597e-001 
+	  1   1   0    3.21837e-002 
+	  0   2   0    1.46837e-002 
+parameters    3
+	  0   0   0    -4.19413e-001 
+	  0   2   0    -3.28085e-002 
+	  1   1   0    -2.29533e-002 
+parameters    2
+	  0   0   0    1.82542e-001 
+	  1   1   0    9.42241e-002 
+end
+
+muscle lat_dorsi_4
+ fmax   96.00
+ lceopt   0.32060 lslack    0.12000 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    3.20930e-001 
+	  0   1   0    3.40485e-002 
+	  0   0   1    -1.41177e-002 
+	  2   1   0    -9.29229e-003 
+	  1   0   0    -1.24492e-002 
+	  1   1   0    5.42387e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -7.95666e-001 
+	  1   1   0    2.97328e-002 
+parameters    3
+	  0   0   0    -5.76075e-001 
+	  3   1   0    -1.64021e-002 
+	  0   3   0    -9.02405e-003 
+parameters    2
+	  0   0   0    1.49056e-001 
+	  1   1   0    7.06675e-002 
+end
+
+muscle lat_dorsi_5
+ fmax   88.00
+ lceopt   0.31290 lslack    0.07200 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    6
+	  0   0   0    2.86830e-001 
+	  0   1   0    3.41663e-002 
+	  0   0   1    -1.40547e-002 
+	  2   1   0    -7.78516e-003 
+	  1   0   0    -1.11276e-002 
+	  1   1   0    5.13397e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -6.88802e-001 
+	  1   1   0    3.79948e-002 
+parameters    4
+	  0   0   0    -7.04903e-001 
+	  3   1   0    -7.33220e-003 
+	  2   0   0    -1.18814e-002 
+	  1   0   0    -1.07365e-002 
+parameters    2
+	  0   0   0    1.26638e-001 
+	  1   1   0    7.73751e-002 
+end
+
+muscle lat_dorsi_6
+ fmax  105.00
+ lceopt   0.34020 lslack    0.06900 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    5
+	  0   0   0    2.63560e-001 
+	  0   1   0    4.01631e-002 
+	  0   0   1    -1.36301e-002 
+	  2   1   0    -8.04268e-003 
+	  1   0   0    -6.58658e-003 
+GH_force_vectors
+parameters    2
+	  0   0   0    -6.50101e-001 
+	  1   1   0    4.34809e-002 
+parameters    4
+	  0   0   0    -7.40720e-001 
+	  3   1   0    -6.78324e-003 
+	  2   0   0    -1.46726e-002 
+	  1   0   0    -1.08916e-002 
+parameters    2
+	  0   0   0    1.09769e-001 
+	  1   1   0    9.76647e-002 
+end
+
+muscle pect_maj_t_1
+ fmax  125.00
+ lceopt   0.18840 lslack    0.03600 pennopt   0.00000 width    0.56000
+ time_constants    0.01576   0.04700
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    7
+	  0   0   0    1.68610e-001 
+	  0   1   0    4.75114e-002 
+	  1   0   0    -1.59200e-002 
+	  0   0   1    -1.60583e-002 
+	  2   1   0    -1.01683e-002 
+	  1   1   0    -2.87564e-002 
+	  1   2   0    1.23561e-002 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.07090e-001 
+	  1   0   0    -3.52125e-002 
+	  2   2   0    4.04865e-002 
+parameters    3
+	  0   0   0    -2.93502e-001 
+	  0   2   0    -9.55767e-002 
+	  1   1   0    -8.21827e-002 
+parameters    3
+	  0   0   0    -5.30726e-001 
+	  1   1   0    1.35008e-001 
+	  0   1   0    8.37792e-002 
+end
+
+muscle pect_maj_t_2
+ fmax  118.00
+ lceopt   0.18300 lslack    0.04300 pennopt   0.00000 width    0.56000
+ time_constants    0.01277   0.04210
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    1.89340e-001 
+	  0   1   0    5.33801e-002 
+	  1   0   0    -1.53655e-002 
+	  2   1   0    -1.27059e-002 
+	  0   0   1    -1.54228e-002 
+	  1   1   0    -3.68263e-002 
+	  1   2   0    1.54829e-002 
+	  0   4   0    -2.08935e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.42460e-001 
+	  1   0   0    -4.73315e-002 
+	  2   1   0    3.11627e-002 
+parameters    2
+	  0   1   0    -2.56924e-001 
+	  1   1   0    -6.61795e-002 
+parameters    3
+	  0   0   0    -5.51657e-001 
+	  1   1   0    1.25962e-001 
+	  0   1   0    7.49842e-002 
+end
+
+muscle pect_maj_t_3
+ fmax  165.00
+ lceopt   0.18530 lslack    0.05300 pennopt   0.00000 width    0.56000
+ time_constants    0.01277   0.04210
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    2.00260e-001 
+	  0   1   0    5.65195e-002 
+	  1   0   0    -1.57501e-002 
+	  2   1   0    -1.48812e-002 
+	  0   0   1    -1.44149e-002 
+	  1   1   0    -3.00544e-002 
+	  0   3   0    -5.11910e-003 
+	  1   3   0    6.77203e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.68536e-001 
+	  1   0   0    -5.37681e-002 
+	  2   0   0    2.09665e-002 
+parameters    1
+	  0   2   0    -1.24684e-001 
+parameters    2
+	  0   0   0    -4.83310e-001 
+	  1   1   0    1.30189e-001 
+end
+
+muscle pect_maj_t_4
+ fmax  157.00
+ lceopt   0.18330 lslack    0.02800 pennopt   0.00000 width    0.56000
+ time_constants    0.00889   0.03530
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    8
+	  0   0   0    1.89670e-001 
+	  1   0   0    -1.59788e-002 
+	  0   1   0    4.62887e-002 
+	  2   1   0    -1.23163e-002 
+	  0   0   1    -1.46046e-002 
+	  1   1   0    -2.83330e-002 
+	  0   3   0    -4.74950e-003 
+	  1   3   0    6.24199e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -8.50049e-001 
+	  1   1   0    -6.48158e-002 
+	  4   0   0    1.36518e-002 
+parameters    2
+	  0   3   0    -8.88394e-002 
+	  0   0   0    3.75960e-002 
+parameters    3
+	  0   0   0    -5.61013e-001 
+	  1   1   0    1.09323e-001 
+	  0   1   0    5.57653e-002 
+end
+
+muscle pect_maj_t_5
+ fmax  133.00
+ lceopt   0.15000 lslack    0.02600 pennopt   0.00000 width    0.56000
+ time_constants    0.00889   0.03530
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    9
+	  0   0   0    1.84010e-001 
+	  1   0   0    -1.70225e-002 
+	  0   1   0    3.09225e-002 
+	  2   1   0    -1.04880e-002 
+	  0   0   1    -1.84890e-002 
+	  1   1   0    -2.07818e-002 
+	  0   3   0    -5.14361e-003 
+	  1   3   0    4.56049e-003 
+	  0   1   1    8.57816e-003 
+GH_force_vectors
+parameters    3
+	  0   0   0    -7.96135e-001 
+	  1   1   0    -5.54343e-002 
+	  0   1   0    -5.44130e-002 
+parameters    2
+	  0   0   0    3.05149e-001 
+	  0   2   0    -1.36237e-001 
+parameters    2
+	  0   0   0    -4.92779e-001 
+	  1   1   0    9.53756e-002 
+end
+
+muscle pect_maj_t_6
+ fmax  198.00
+ lceopt   0.14490 lslack    0.03600 pennopt   0.00000 width    0.56000
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    9
+	  0   0   0    1.85090e-001 
+	  1   1   0    -3.45200e-002 
+	  2   0   0    -3.33918e-003 
+	  0   1   0    4.13309e-002 
+	  0   2   0    -1.59489e-002 
+	  1   0   0    -1.15749e-002 
+	  0   0   1    -1.04601e-002 
+	  2   1   0    -9.60420e-003 
+	  1   2   0    1.17624e-002 
+GH_force_vectors
+parameters    3
+	  0   0   0    -7.59286e-001 
+	  0   1   0    -9.05115e-002 
+	  1   1   0    -6.23184e-002 
+parameters    2
+	  0   0   0    5.12642e-001 
+	  0   1   0    -2.56487e-001 
+parameters    2
+	  0   0   0    -4.34176e-001 
+	  1   1   0    1.35007e-001 
+end
+
+muscle pect_maj_c_1
+ fmax  179.00
+ lceopt   0.13630 lslack    0.01700 pennopt   0.00000 width    0.56000
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    7
+	  0   0   0    1.61330e-001 
+	  1   1   0    -2.11862e-002 
+	  2   0   0    -2.43265e-003 
+	  1   0   0    -1.23701e-002 
+	  0   4   0    -3.55241e-003 
+	  0   1   0    2.36140e-002 
+	  2   1   0    -1.23657e-002 
+GH_force_vectors
+parameters    3
+	  0   0   0    -5.81080e-001 
+	  0   1   0    -2.11285e-001 
+	  1   1   0    -6.81635e-002 
+parameters    2
+	  0   0   0    6.88108e-001 
+	  0   2   0    -2.31487e-001 
+parameters    2
+	  0   0   0    -3.44338e-001 
+	  1   1   0    2.75190e-001 
+end
+
+muscle pect_maj_c_2
+ fmax  113.00
+ lceopt   0.10910 lslack    0.01400 pennopt   0.00000 width    0.56000
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     GH_y
+     GH_z
+     GH_yy
+     end
+ parameters    9
+	  0   0   0    1.20870e-001 
+	  1   1   0    -1.17060e-002 
+	  2   0   0    -1.24376e-003 
+	  1   0   0    -1.47937e-002 
+	  0   4   0    -2.49002e-003 
+	  0   1   0    1.25105e-002 
+	  0   0   1    -1.37314e-002 
+	  2   1   0    -7.72337e-003 
+	  0   1   1    8.84241e-003 
+GH_force_vectors
+parameters    4
+	  0   0   0    -6.34444e-001 
+	  0   1   0    -1.80755e-001 
+	  1   1   2    -1.04077e-001 
+	  2   0   0    3.64927e-002 
+parameters    3
+	  0   0   0    6.58845e-001 
+	  0   2   0    -1.92935e-001 
+	  1   0   0    5.16969e-002 
+parameters    2
+	  0   0   0    -3.58882e-001 
+	  1   1   0    1.97259e-001 
+end
+
+muscle tric_med_1
+ fmax  263.00
+ lceopt   0.08070 lslack    0.08750 pennopt  17.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.02202   0.05720
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    1.54430e-001 
+	  1    1.90633e-002 
+end
+
+muscle tric_med_2
+ fmax  256.00
+ lceopt   0.07730 lslack    0.11220 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    1.78170e-001 
+	  1    1.91119e-002 
+end
+
+muscle tric_med_3
+ fmax  240.00
+ lceopt   0.06020 lslack    0.01070 pennopt   0.00000 width    0.56000
+ PEEslack 1.40
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    6.33300e-002 
+	  1    1.84249e-002 
+end
+
+muscle tric_med_4
+ fmax  211.00
+ lceopt   0.07460 lslack    0.04040 pennopt   8.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    1.01960e-001 
+	  1    1.90363e-002 
+end
+
+muscle tric_med_5
+ fmax  107.00
+ lceopt   0.08070 lslack    0.07380 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    1.45220e-001 
+	  1    1.91213e-002 
+end
+
+muscle brachialis_1
+ fmax  314.00
+ lceopt   0.08760 lslack    0.08070 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    4
+	  0    1.88030e-001 
+	  1    -8.13746e-003 
+	  2    -1.51780e-002 
+	  4    8.50840e-004 
+end
+
+muscle brachialis_2
+ fmax  158.00
+ lceopt   0.09530 lslack    0.05920 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    4
+	  0    1.79410e-001 
+	  1    -8.63953e-003 
+	  2    -1.42893e-002 
+	  4    8.36771e-004 
+end
+
+muscle brachialis_3
+ fmax  157.00
+ lceopt   0.08700 lslack    0.03940 pennopt   0.00000 width    0.56000
+ PEEslack 1.10
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    4
+	  0    1.43960e-001 
+	  1    -9.96260e-003 
+	  2    -7.98999e-003 
+	  4    4.29369e-004 
+end
+
+muscle brachialis_4
+ fmax   87.00
+ lceopt   0.07580 lslack    0.03170 pennopt   0.00000 width    0.56000
+ PEEslack 1.40
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    4
+	  0    1.42260e-001 
+	  1    -8.60598e-003 
+	  2    -1.33006e-002 
+	  4    7.05625e-004 
+end
+
+muscle brachialis_5
+ fmax  101.00
+ lceopt   0.06190 lslack    0.02090 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    3
+	  0    1.09470e-001 
+	  2    -5.56113e-003 
+	  1    -1.27956e-002 
+end
+
+muscle brachialis_6
+ fmax  104.00
+ lceopt   0.04720 lslack    0.03500 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    4
+	  0    9.69100e-002 
+	  1    -9.93529e-003 
+	  2    -7.68010e-003 
+	  4    3.59208e-004 
+end
+
+muscle brachialis_7
+ fmax  118.00
+ lceopt   0.06210 lslack    0.00760 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    3
+	  0    9.54100e-002 
+	  2    -6.17570e-003 
+	  1    -1.25985e-002 
+end
+
+muscle brachiorad_1
+ fmax   30.00
+ lceopt   0.16130 lslack    0.11970 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     PS_y
+     end
+ parameters    3
+	  0   0    3.40800e-001 
+	  2   0    -5.21981e-002 
+	  3   0    1.04332e-002 
+end
+
+muscle brachiorad_2
+ fmax   82.00
+ lceopt   0.16130 lslack    0.11970 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     PS_y
+     end
+ parameters    3
+	  0   0    3.26180e-001 
+	  2   0    -3.10983e-002 
+	  4   0    1.66164e-003 
+end
+
+muscle brachiorad_3
+ fmax   52.00
+ lceopt   0.10660 lslack    0.15420 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     PS_y
+     end
+ parameters    3
+	  0   0    3.10910e-001 
+	  2   0    -2.38471e-002 
+	  4   0    1.24849e-003 
+end
+
+muscle pron_teres_1
+ fmax  510.00
+ lceopt   0.06100 lslack    0.08510 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     PS_y
+     end
+ parameters 7
+	  0   0    1.71153e-001 
+	  1   2    -3.51510e-004 
+	  0   1    -2.98115e-004 
+	  1   0    -7.32646e-003 
+	  0   2    -4.27948e-003 
+	  0   4    1.62077e-004 
+	  2   0    -3.56601e-003 
+end
+
+muscle pron_teres_2
+ fmax  141.00
+ lceopt   0.03910 lslack    0.04840 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters 3
+	  0    9.56050e-002 
+	  2    -3.96499e-003 
+	  4    1.43491e-004 
+end
+
+muscle supinator_1
+ fmax   47.00
+ lceopt   0.02670 lslack    0.02540 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    3
+	  0    1.93800e-002 
+	  1    1.86215e-002 
+	  4    -1.00675e-004 
+end
+
+muscle supinator_2
+ fmax  232.00
+ lceopt   0.02600 lslack    0.02310 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    3
+	  0    2.14500e-002 
+	  1    1.53840e-002 
+	  4    -7.07422e-005 
+end
+
+muscle supinator_3
+ fmax  126.00
+ lceopt   0.02520 lslack    0.01500 pennopt   0.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    4
+	  0    2.54500e-002 
+	  1    7.99016e-003 
+	  4    -1.40631e-004 
+	  2    2.00679e-003 
+end
+
+muscle supinator_4
+ fmax  148.00
+ lceopt   0.02630 lslack    0.01450 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    4
+	  0    2.70500e-002 
+	  1    7.44984e-003 
+	  4    -1.25270e-004 
+	  2    1.74305e-003 
+end
+
+muscle supinator_5
+ fmax  285.00
+ lceopt   0.02740 lslack    0.01390 pennopt   2.00000 width    0.56000
+ PEEslack 1.30
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    3
+	  0    3.08700e-002 
+	  1    9.63075e-003 
+	  4    -3.60936e-005 
+end
+
+muscle pron_quad_1
+ fmax   73.00
+ lceopt   0.03770 lslack    0.00500 pennopt   0.00000 width    0.56000
+ PEEslack 1.10
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    3
+	  0    5.49700e-002 
+	  2    -1.34126e-003 
+	  1    -2.13854e-003 
+end
+
+muscle pron_quad_2
+ fmax  178.00
+ lceopt   0.03860 lslack    0.00500 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    3
+	  0    5.20400e-002 
+	  2    -1.36963e-003 
+	  1    -3.85076e-003 
+end
+
+muscle pron_quad_3
+ fmax  219.00
+ lceopt   0.03520 lslack    0.00500 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     PS_y
+     end
+ parameters    3
+	  0    5.01300e-002 
+	  1    -4.81903e-003 
+	  2    -1.34325e-003 
+end
+
+muscle tric_lat_1
+ fmax  153.00
+ lceopt   0.07580 lslack    0.17070 pennopt   0.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    2.30740e-001 
+	  1    1.96910e-002 
+end
+
+muscle tric_lat_2
+ fmax  410.00
+ lceopt   0.07660 lslack    0.17700 pennopt   5.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    2.33360e-001 
+	  1    1.96824e-002 
+end
+
+muscle tric_lat_3
+ fmax  219.00
+ lceopt   0.06560 lslack    0.19110 pennopt  10.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    2.37990e-001 
+	  1    1.90416e-002 
+end
+
+muscle tric_lat_4
+ fmax  275.00
+ lceopt   0.06380 lslack    0.15700 pennopt  10.00000 width    0.56000
+ PEEslack 1.20
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    1.98230e-001 
+	  1    1.90115e-002 
+end
+
+muscle tric_lat_5
+ fmax   87.00
+ lceopt   0.06380 lslack    0.15700 pennopt  17.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    1.94170e-001 
+	  1    1.89235e-002 
+end
+
+muscle anconeus_1
+ fmax   31.00
+ lceopt   0.02520 lslack    0.00640 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    3
+	  0    2.00500e-002 
+	  1    8.32018e-003 
+	  3    -5.54236e-004 
+end
+
+muscle anconeus_2
+ fmax   70.00
+ lceopt   0.02020 lslack    0.00800 pennopt  15.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    3
+	  0    1.93300e-002 
+	  1    8.14809e-003 
+	  4    -1.22145e-004 
+end
+
+muscle anconeus_3
+ fmax   25.00
+ lceopt   0.02280 lslack    0.00430 pennopt   0.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    3
+	  0    2.24300e-002 
+	  1    1.11027e-002 
+	  2    -3.10940e-003 
+end
+
+muscle anconeus_4
+ fmax  118.00
+ lceopt   0.02700 lslack    0.03000 pennopt  18.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    2
+	  0    4.96800e-002 
+	  1    4.71508e-003 
+end
+
+muscle anconeus_5
+ fmax  118.00
+ lceopt   0.02660 lslack    0.02000 pennopt  23.00000 width    0.56000
+ time_constants    0.01604   0.04760
+ geometry polynomial
+ dofs
+     EL_x
+     end
+ parameters    4
+	  0    3.39900e-002 
+	  1    3.83288e-003 
+	  4    -2.10896e-004 
+	  2    2.16160e-003 
+end
+
+end

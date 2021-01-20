@@ -1,0 +1,56 @@
+SD/FAST Information File: ../model/dynsim/src/das2.sd
+Generated 14-Nov-2007 16:57:48 by SD/FAST, Order(N) formulation
+(sdfast B.2.8 #30123) on machine ID unknown
+
+ROADMAP (../model/dynsim/src/das2.sd)
+
+Bodies         Inb
+No  Name       body Joint type  Coords q
+--- ---------- ---- ----------- ----------------
+ -1 $ground                                     
+  0 thorax      -1  Weld                        
+  1 clavicle_1   0  Weld                        
+  2 clavicle_2   1  Weld                        
+  3 clavicle_r   2  Weld                        
+  4 scapula_1    3  Weld                        
+  5 scapula_2    4  Weld                        
+  6 scapula_r    5  Weld                        
+  7 humerus_1    6  Pin           0             
+  8 humerus_2    7  Pin           1             
+  9 humerus_r    8  Pin           2             
+ 10 ulna_r       9  Pin           3             
+ 11 radius_r    10  Pin           4             
+
+
+STATE INDEX TO JOINT/AXIS MAP (../model/dynsim/src/das2.sd)
+
+ Index
+  q|u   Joint  Axis   Joint type    Axis type    Joint Name
+ -----  -----  ----   -----------   ----------   ----------
+  0|5       7     0   Pin           rotate       
+  1|6       8     0   Pin           rotate       
+  2|7       9     0   Pin           rotate       
+  3|8      10     0   Pin           rotate       
+  4|9      11     0   Pin           rotate       
+
+
+SYSTEM PARAMETERS (../model/dynsim/src/das2.sd)
+
+Parameter  Value  Description
+
+nbod          12  no. bodies (also, no. of tree joints)
+njnt          12  total number of joints (tree+loop)
+ndof           5  no. degrees of freedom allowed by tree joints
+nloop          0  no. loop joints
+nldof          0  no. degrees of freedom allowed by loop joints
+
+nq             5  no. position coordinates in state (tree joints)
+nu             5  no. rate coordinates in state (tree joints)
+nlq            0  no. position coordinates describing loop joints
+nlu            0  no. rate coordinates describing loop joints
+
+nc             0  total no. constraints defined
+nlc            0  no. loop joint constraints
+npresc         0  no. prescribed motion constraints
+nuserc         0  no. user constraints
+
