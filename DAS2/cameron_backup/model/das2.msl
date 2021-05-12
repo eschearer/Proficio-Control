@@ -1,0 +1,2181 @@
+/****************************************************/
+/* Output muscle file made by SIMM 4.1.1     */
+/* Name of input muscle file: das2.msl             */
+/****************************************************/
+
+
+begindynamicparameters
+damping
+activation1
+activation2
+mass
+timescale
+enddynamicparameters
+
+
+beginmuscle defaultmuscle
+beginactiveforcelengthcurve
+(-0.020000, 0.000000)
+(-0.010000, 0.000000)
+( 0.000000, 0.000000)
+( 0.100000, 0.190000)
+( 0.200000, 0.360000)
+( 0.300000, 0.510000)
+( 0.400000, 0.640000)
+( 0.500000, 0.750000)
+( 0.600000, 0.840000)
+( 0.700000, 0.910000)
+( 0.800000, 0.960000)
+( 0.900000, 0.990000)
+( 1.000000, 1.000000)
+( 1.100000, 0.990000)
+( 1.200000, 0.960000)
+( 1.300000, 0.910000)
+( 1.400000, 0.840000)
+( 1.500000, 0.750000)
+( 1.600000, 0.640000)
+( 1.700000, 0.510000)
+( 1.800000, 0.360000)
+( 1.900000, 0.190000)
+( 2.000000, 0.000000)
+( 2.010000, 0.000000)
+( 2.020000, 0.000000)
+endactiveforcelengthcurve
+beginpassiveforcelengthcurve
+( 0.980000, 0.000000)
+( 0.990000, 0.000000)
+( 1.000000, 0.000000)
+( 1.100000, 0.010000)
+( 1.200000, 0.040000)
+( 1.300000, 0.090000)
+( 1.400000, 0.160000)
+( 1.500000, 0.250000)
+( 1.600000, 0.360000)
+( 1.700000, 0.490000)
+( 1.800000, 0.640000)
+( 1.900000, 0.810000)
+( 2.000000, 1.000000)
+( 2.100000, 1.210000)
+( 2.200000, 1.440000)
+( 2.300000, 1.690000)
+( 2.400000, 1.960000)
+( 2.500000, 2.250000)
+( 2.600000, 2.560000)
+( 2.700000, 2.890000)
+( 2.800000, 3.240000)
+( 2.900000, 3.610000)
+( 3.000000, 4.000000)
+( 4.000000, 9.000000)
+endpassiveforcelengthcurve
+begintendonforcelengthcurve
+(-10.000000, 0.000000)
+(-0.002000, 0.000000)
+(-0.001000, 0.000000)
+( 0.000000, 0.000000)
+( 0.001310, 0.010800)
+( 0.002810, 0.025700)
+( 0.004310, 0.043500)
+( 0.005810, 0.065200)
+( 0.007310, 0.091500)
+( 0.008810, 0.123000)
+( 0.010300, 0.161000)
+( 0.011800, 0.208000)
+( 0.012300, 0.227000)
+( 9.200000,345.000000)
+( 9.201000,345.000000)
+( 9.202000,345.000000)
+(20.000000,345.000000)
+endtendonforcelengthcurve
+beginforcevelocitycurve
+(-1.000000, 0.000000)
+(-0.950000, 0.010417)
+(-0.900000, 0.021739)
+(-0.850000, 0.034091)
+(-0.800000, 0.047619)
+(-0.750000, 0.062500)
+(-0.700000, 0.078947)
+(-0.650000, 0.097222)
+(-0.600000, 0.117647)
+(-0.550000, 0.140625)
+(-0.500000, 0.166667)
+(-0.450000, 0.196429)
+(-0.400000, 0.230769)
+(-0.350000, 0.270833)
+(-0.300000, 0.318182)
+(-0.250000, 0.375000)
+(-0.200000, 0.444444)
+(-0.150000, 0.531250)
+(-0.100000, 0.642857)
+(-0.050000, 0.791667)
+( 0.000000, 1.000000)
+( 0.050000, 1.482014)
+( 0.100000, 1.601571)
+( 0.150000, 1.655791)
+( 0.200000, 1.686739)
+( 0.250000, 1.706751)
+( 0.300000, 1.720753)
+( 0.350000, 1.731099)
+( 0.400000, 1.739055)
+( 0.450000, 1.745365)
+( 0.500000, 1.750490)
+( 0.550000, 1.754736)
+( 0.600000, 1.758312)
+( 0.650000, 1.761364)
+( 0.700000, 1.763999)
+( 0.750000, 1.766298)
+( 0.800000, 1.768321)
+( 0.850000, 1.770115)
+( 0.900000, 1.771717)
+( 0.950000, 1.773155)
+( 1.000000, 1.774455)
+endforcevelocitycurve
+max_force     0.001
+optimal_fiber_length 10.00000
+tendon_slack_length 1.00000
+pennation_angle  0.000
+visible yes
+max_contraction_velocity 10.00000
+excitation_format spline_fit
+muscle_model 5
+damping 0.100000
+activation1 7.667000
+activation2 1.459854
+timescale 0.100000
+endmuscle
+
+
+beginmuscle delt_scap_1
+beginpoints
+-0.08278 -0.00082 -0.00086 segment scapula_r
+ 0.01347 -0.11128  0.00919 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   289.000
+optimal_fiber_length 0.11280
+tendon_slack_length 0.08000
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 25.902740
+activation2 11.976050
+mass 0.037030
+endmuscle
+
+beginmuscle delt_scap_2
+beginpoints
+-0.04999  0.00627  0.00113 segment scapula_r
+ 0.01555 -0.09645  0.00528 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   211.000
+optimal_fiber_length 0.09490
+tendon_slack_length 0.07600
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 25.902740
+activation2 11.976050
+mass 0.022690
+endmuscle
+
+beginmuscle delt_scap_3
+beginpoints
+-0.01438  0.00574 -0.00141 segment scapula_r
+ 0.01555 -0.09645  0.00528 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   446.000
+optimal_fiber_length 0.08330
+tendon_slack_length 0.06200
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 25.902740
+activation2 11.976050
+mass 0.042140
+endmuscle
+
+beginmuscle delt_scap_4
+beginpoints
+-0.00300 -0.00452 -0.00481 segment scapula_r
+ 0.01571 -0.08467  0.00404 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   117.000
+optimal_fiber_length 0.06660
+tendon_slack_length 0.04500
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 25.902740
+activation2 11.976050
+mass 0.008880
+endmuscle
+
+beginmuscle delt_scap_5
+beginpoints
+ 0.01299  0.00078 -0.01734 segment scapula_r
+ 0.01678 -0.07782  0.00066 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   120.000
+optimal_fiber_length 0.06560
+tendon_slack_length 0.03500
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 120.099210
+activation2 29.154520
+mass 0.008910
+endmuscle
+
+beginmuscle delt_scap_6
+beginpoints
+ 0.00362  0.00532 -0.00502 segment scapula_r
+ 0.01646 -0.10894  0.00661 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   285.000
+optimal_fiber_length 0.07670
+tendon_slack_length 0.06700
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 120.099210
+activation2 29.154520
+mass 0.024850
+endmuscle
+
+beginmuscle delt_scap_7
+beginpoints
+ 0.00849  0.00027 -0.00918 segment scapula_r
+ 0.01579 -0.13160  0.00516 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   149.000
+optimal_fiber_length 0.07540
+tendon_slack_length 0.08200
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 120.099210
+activation2 29.154520
+mass 0.012750
+endmuscle
+
+beginmuscle delt_scap_8
+beginpoints
+ 0.01412  0.00617 -0.01810 segment scapula_r
+ 0.01646 -0.10894  0.00661 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   215.000
+optimal_fiber_length 0.07100
+tendon_slack_length 0.06500
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 120.099210
+activation2 29.154520
+mass 0.017300
+endmuscle
+
+beginmuscle delt_scap_9
+beginpoints
+ 0.01569  0.00480 -0.02414 segment scapula_r
+ 0.01847 -0.11738 -0.00494 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   286.000
+optimal_fiber_length 0.07320
+tendon_slack_length 0.07100
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 120.099210
+activation2 29.154520
+mass 0.023780
+endmuscle
+
+beginmuscle delt_scap10
+beginpoints
+ 0.01771  0.00508 -0.03311 segment scapula_r
+ 0.01830 -0.10592 -0.00605 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   445.000
+optimal_fiber_length 0.07480
+tendon_slack_length 0.06400
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 120.099210
+activation2 29.154520
+mass 0.037900
+endmuscle
+
+beginmuscle delt_scap11
+beginpoints
+ 0.01522  0.00824 -0.04508 segment scapula_r
+ 0.01806 -0.09231 -0.00863 segment humerus_r
+endpoints
+begingroups
+delt_scap 
+endgroups
+max_force   239.000
+optimal_fiber_length 0.07370
+tendon_slack_length 0.04800
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 79.169340
+activation2 23.923440
+mass 0.020120
+endmuscle
+
+beginmuscle delt_clav_1
+beginpoints
+ 0.15090  0.02065  0.00128 segment clavicle_r
+ 0.01806 -0.09231 -0.00863 segment humerus_r
+endpoints
+begingroups
+delt_clav 
+endgroups
+max_force   128.000
+optimal_fiber_length 0.08360
+tendon_slack_length 0.06200
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 79.169340
+activation2 23.923440
+mass 0.012170
+endmuscle
+
+beginmuscle delt_clav_2
+beginpoints
+ 0.12912  0.02578  0.00498 segment clavicle_r
+ 0.01536 -0.11883 -0.01159 segment humerus_r
+endpoints
+begingroups
+delt_clav 
+endgroups
+max_force   160.000
+optimal_fiber_length 0.09400
+tendon_slack_length 0.08800
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 79.169340
+activation2 23.923440
+mass 0.017010
+endmuscle
+
+beginmuscle delt_clav_3
+beginpoints
+ 0.13429  0.02229  0.00073 segment clavicle_r
+ 0.01673 -0.09943 -0.00970 segment humerus_r
+endpoints
+begingroups
+delt_clav 
+endgroups
+max_force   105.000
+optimal_fiber_length 0.08240
+tendon_slack_length 0.06700
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 79.169340
+activation2 23.923440
+mass 0.009830
+endmuscle
+
+beginmuscle delt_clav_4
+beginpoints
+ 0.13196  0.01641  0.00086 segment clavicle_r
+ 0.01536 -0.11883 -0.01159 segment humerus_r
+endpoints
+begingroups
+delt_clav 
+endgroups
+max_force   112.000
+optimal_fiber_length 0.09910
+tendon_slack_length 0.07300
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject deltoid
+activation1 79.169340
+activation2 23.923440
+mass 0.012590
+endmuscle
+
+beginmuscle coracobr_1
+beginpoints
+-0.00808 -0.00860 -0.07655 segment scapula_r
+-0.00267 -0.14632 -0.00771 segment humerus_r
+endpoints
+begingroups
+coracobr 
+endgroups
+max_force   201.000
+optimal_fiber_length 0.06600
+tendon_slack_length 0.09200
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 79.169340
+activation2 23.923440
+mass 0.015060
+endmuscle
+
+beginmuscle coracobr_2
+beginpoints
+-0.01352 -0.01494 -0.07857 segment scapula_r
+-0.00764 -0.16485 -0.00176 segment humerus_r
+endpoints
+begingroups
+coracobr 
+endgroups
+max_force   148.000
+optimal_fiber_length 0.06830
+tendon_slack_length 0.10400
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 133.353390
+activation2 30.581040
+mass 0.011510
+endmuscle
+
+beginmuscle coracobr_3
+beginpoints
+-0.00927 -0.00819 -0.08260 segment scapula_r
+-0.00534 -0.17394 -0.00556 segment humerus_r
+endpoints
+begingroups
+coracobr 
+endgroups
+max_force   114.000
+optimal_fiber_length 0.07270
+tendon_slack_length 0.11300
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 133.353390
+activation2 30.581040
+mass 0.009390
+endmuscle
+
+beginmuscle infra_1
+beginpoints
+-0.06093 -0.04183 -0.01900 segment scapula_r
+ 0.01994  0.00982  0.01257 segment humerus_r
+endpoints
+begingroups
+infra 
+endgroups
+max_force   272.000
+optimal_fiber_length 0.06330
+tendon_slack_length 0.03800
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject infra_cyl
+activation1 133.353390
+activation2 30.581040
+mass 0.019610
+endmuscle
+
+beginmuscle infra_2
+beginpoints
+-0.12606 -0.09226  0.00115 segment scapula_r
+ 0.01835  0.01600  0.00691 segment humerus_r
+endpoints
+begingroups
+infra 
+endgroups
+max_force   275.000
+optimal_fiber_length 0.07190
+tendon_slack_length 0.10700
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject infra_cyl
+activation1 133.353390
+activation2 30.581040
+mass 0.022450
+endmuscle
+
+beginmuscle infra_3
+beginpoints
+-0.10770 -0.07258  0.00057 segment scapula_r
+ 0.01835  0.01600  0.00691 segment humerus_r
+endpoints
+begingroups
+infra 
+endgroups
+max_force   194.000
+optimal_fiber_length 0.06770
+tendon_slack_length 0.08400
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject infra_cyl
+activation1 133.353390
+activation2 30.581040
+mass 0.014880
+endmuscle
+
+beginmuscle infra_4
+beginpoints
+-0.10911 -0.04946 -0.00122 segment scapula_r
+ 0.01605  0.01912  0.00704 segment humerus_r
+endpoints
+begingroups
+infra 
+endgroups
+max_force   207.000
+optimal_fiber_length 0.06930
+tendon_slack_length 0.07100
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject infra_cyl
+activation1 133.353390
+activation2 30.581040
+mass 0.016310
+endmuscle
+
+beginmuscle infra_5
+beginpoints
+-0.10439 -0.01708 -0.01072 segment scapula_r
+ 0.01605  0.01912  0.00704 segment humerus_r
+endpoints
+begingroups
+infra 
+endgroups
+max_force   302.000
+optimal_fiber_length 0.06980
+tendon_slack_length 0.05000
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject infra_cyl
+activation1 82.956860
+activation2 24.570020
+mass 0.024140
+endmuscle
+
+beginmuscle infra_6
+beginpoints
+-0.08070 -0.00038  0.00044 segment scapula_r
+ 0.01917  0.01274  0.00836 segment humerus_r
+endpoints
+begingroups
+infra 
+endgroups
+max_force   182.000
+optimal_fiber_length 0.07530
+tendon_slack_length 0.03500
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject infra_cyl
+activation1 82.956860
+activation2 24.570020
+mass 0.015640
+endmuscle
+
+beginmuscle ter_min_1
+beginpoints
+-0.05570 -0.06650 -0.01405 segment scapula_r
+ 0.02578 -0.00703  0.00880 segment humerus_r
+endpoints
+begingroups
+ter_min 
+endgroups
+max_force   122.000
+optimal_fiber_length 0.05010
+tendon_slack_length 0.04900
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_min_cyl
+activation1 82.956860
+activation2 24.570020
+mass 0.007140
+endmuscle
+
+beginmuscle ter_min_2
+beginpoints
+-0.06585 -0.06908 -0.00647 segment scapula_r
+ 0.02808 -0.00124  0.00800 segment humerus_r
+endpoints
+begingroups
+ter_min 
+endgroups
+max_force   195.000
+optimal_fiber_length 0.05500
+tendon_slack_length 0.05100
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_min_cyl
+activation1 82.956860
+activation2 24.570020
+mass 0.012210
+endmuscle
+
+beginmuscle ter_min_3
+beginpoints
+-0.03809 -0.04208 -0.01695 segment scapula_r
+ 0.02578 -0.00703  0.00880 segment humerus_r
+endpoints
+begingroups
+ter_min 
+endgroups
+max_force   180.000
+optimal_fiber_length 0.05060
+tendon_slack_length 0.01800
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_min_cyl
+activation1 82.956860
+activation2 24.570020
+mass 0.010410
+endmuscle
+
+beginmuscle ter_maj_1
+beginpoints
+-0.08743 -0.10492 -0.01310 segment scapula_r
+-0.00601 -0.06556 -0.00941 segment humerus_r
+endpoints
+begingroups
+ter_maj 
+endgroups
+max_force   165.000
+optimal_fiber_length 0.14110
+tendon_slack_length 0.00600
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 82.956860
+activation2 24.570020
+mass 0.026430
+endmuscle
+
+beginmuscle ter_maj_2
+beginpoints
+-0.10274 -0.11248 -0.01045 segment scapula_r
+-0.00286 -0.08427 -0.00946 segment humerus_r
+endpoints
+begingroups
+ter_maj 
+endgroups
+max_force    85.000
+optimal_fiber_length 0.15950
+tendon_slack_length 0.01200
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 98.404260
+activation2 26.595740
+mass 0.015490
+endmuscle
+
+beginmuscle ter_maj_3
+beginpoints
+-0.09123 -0.09007  0.00009 segment scapula_r
+-0.00380 -0.07838 -0.00899 segment humerus_r
+endpoints
+begingroups
+ter_maj 
+endgroups
+max_force   200.000
+optimal_fiber_length 0.15260
+tendon_slack_length 0.01500
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 98.404260
+activation2 26.595740
+mass 0.034810
+endmuscle
+
+beginmuscle ter_maj_4
+beginpoints
+-0.07965 -0.09549 -0.01112 segment scapula_r
+-0.00652 -0.04977 -0.01067 segment humerus_r
+endpoints
+begingroups
+ter_maj 
+endgroups
+max_force   158.000
+optimal_fiber_length 0.10930
+tendon_slack_length 0.03400
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 98.404260
+activation2 26.595740
+mass 0.019710
+endmuscle
+
+beginmuscle supra_1
+beginpoints
+-0.06032  0.00324 -0.01859 segment scapula_r
+ 0.02320  0.01256  0.00267 segment humerus_r
+endpoints
+begingroups
+supra 
+endgroups
+max_force   120.000
+optimal_fiber_length 0.05410
+tendon_slack_length 0.01700
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 98.404260
+activation2 26.595740
+mass 0.007400
+endmuscle
+
+beginmuscle supra_2
+beginpoints
+-0.05964  0.01101 -0.00694 segment scapula_r
+ 0.02320  0.01256  0.00267 segment humerus_r
+endpoints
+begingroups
+supra 
+endgroups
+max_force   113.000
+optimal_fiber_length 0.05910
+tendon_slack_length 0.02500
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 98.404260
+activation2 26.595740
+mass 0.007560
+endmuscle
+
+beginmuscle supra_3
+beginpoints
+-0.09439  0.02104 -0.02501 segment scapula_r
+ 0.01229  0.01923 -0.01372 segment humerus_r
+endpoints
+begingroups
+supra 
+endgroups
+max_force   258.000
+optimal_fiber_length 0.05640
+tendon_slack_length 0.05200
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 98.404260
+activation2 26.595740
+mass 0.016510
+endmuscle
+
+beginmuscle supra_4
+beginpoints
+-0.07385  0.02120 -0.04032 segment scapula_r
+ 0.01229  0.01923 -0.01372 segment humerus_r
+endpoints
+begingroups
+supra 
+endgroups
+max_force   130.000
+optimal_fiber_length 0.05540
+tendon_slack_length 0.03100
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 63.469170
+activation2 21.276600
+mass 0.008190
+endmuscle
+
+beginmuscle subscap_1
+beginpoints
+-0.06191 -0.01317 -0.02286 segment scapula_r
+-0.01790  0.01220 -0.01490 segment humerus_r
+-0.00294  0.01654 -0.01923 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force    44.000
+optimal_fiber_length 0.05560
+tendon_slack_length 0.02800
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 63.469170
+activation2 21.276600
+mass 0.002810
+endmuscle
+
+beginmuscle subscap_2
+beginpoints
+-0.08371  0.01198 -0.02805 segment scapula_r
+-0.01990  0.01360 -0.01100 segment humerus_r
+-0.00052  0.01294 -0.02164 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force    78.000
+optimal_fiber_length 0.06490
+tendon_slack_length 0.04400
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 63.469170
+activation2 21.276600
+mass 0.005750
+endmuscle
+
+beginmuscle subscap_3
+beginpoints
+-0.10494 -0.01449 -0.01421 segment scapula_r
+-0.00790  0.01530 -0.01920 segment humerus_r
+-0.00294  0.01654 -0.01923 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force   264.000
+optimal_fiber_length 0.06760
+tendon_slack_length 0.05900
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 63.469170
+activation2 21.276600
+mass 0.020210
+endmuscle
+
+beginmuscle subscap_4
+beginpoints
+-0.09383 -0.04361 -0.00800 segment scapula_r
+ 0.00035  0.00641 -0.02488 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force   274.000
+optimal_fiber_length 0.07440
+tendon_slack_length 0.05500
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 63.469170
+activation2 21.276600
+mass 0.023760
+endmuscle
+
+beginmuscle subscap_5
+beginpoints
+-0.08744 -0.05705 -0.01224 segment scapula_r
+ 0.00434  0.00857 -0.02458 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force   114.000
+optimal_fiber_length 0.07970
+tendon_slack_length 0.06600
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 63.469170
+activation2 21.276600
+mass 0.010330
+endmuscle
+
+beginmuscle subscap_6
+beginpoints
+-0.10583 -0.07907 -0.00359 segment scapula_r
+ 0.00177  0.00229 -0.02803 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force   149.000
+optimal_fiber_length 0.07620
+tendon_slack_length 0.07700
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 78.287850
+activation2 23.752970
+mass 0.012920
+endmuscle
+
+beginmuscle subscap_7
+beginpoints
+-0.09986 -0.09466 -0.01007 segment scapula_r
+-0.00244  0.00087 -0.02664 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force   162.000
+optimal_fiber_length 0.08200
+tendon_slack_length 0.07900
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 78.287850
+activation2 23.752970
+mass 0.015130
+endmuscle
+
+beginmuscle subscap_8
+beginpoints
+-0.06847 -0.06545 -0.01992 segment scapula_r
+-0.00244  0.00087 -0.02664 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force    61.000
+optimal_fiber_length 0.07650
+tendon_slack_length 0.04000
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 112.516460
+activation2 28.328610
+mass 0.005320
+endmuscle
+
+beginmuscle subscap_9
+beginpoints
+-0.07975 -0.09210 -0.01229 segment scapula_r
+-0.00657 -0.00374 -0.02331 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force   222.000
+optimal_fiber_length 0.07210
+tendon_slack_length 0.05900
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 112.516460
+activation2 28.328610
+mass 0.018200
+endmuscle
+
+beginmuscle subscap10
+beginpoints
+-0.04636 -0.05426 -0.02109 segment scapula_r
+-0.00741 -0.01704 -0.01554 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force    47.000
+optimal_fiber_length 0.06760
+tendon_slack_length 0.01000
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 45.410560
+activation2 17.482520
+mass 0.003610
+endmuscle
+
+beginmuscle subscap11
+beginpoints
+-0.03613 -0.04567 -0.02881 segment scapula_r
+-0.00974 -0.02286 -0.01025 segment humerus_r
+endpoints
+begingroups
+subscap 
+endgroups
+max_force    16.000
+optimal_fiber_length 0.06430
+tendon_slack_length 0.00100
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+activation1 45.410560
+activation2 17.482520
+mass 0.001150
+endmuscle
+
+beginmuscle bic_l
+beginpoints
+-0.01401 -0.00249 -0.04288 segment scapula_r
+ 0.02170  0.00010 -0.00110 segment humerus_r
+-0.00282 -0.03609 -0.01072 segment radius_r
+endpoints
+begingroups
+bic_c_l 
+endgroups
+max_force   347.000
+optimal_fiber_length 0.12920
+tendon_slack_length 0.23350
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject inf_sup_sub
+wrapobject radius
+activation1 45.410560
+activation2 17.482520
+mass 0.066200
+endmuscle
+
+beginmuscle bic_b_1
+beginpoints
+-0.00915 -0.00833 -0.08244 segment scapula_r
+-0.00282 -0.03609 -0.01072 segment radius_r
+endpoints
+begingroups
+bic_c_b 
+endgroups
+max_force   173.000
+optimal_fiber_length 0.11700
+tendon_slack_length 0.19130
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject radius
+activation1 45.410560
+activation2 17.482520
+mass 0.020790
+endmuscle
+
+beginmuscle bic_b_2
+beginpoints
+-0.00915 -0.00833 -0.08244 segment scapula_r
+-0.00282 -0.03609 -0.01072 segment radius_r
+endpoints
+begingroups
+bic_c_b 
+endgroups
+max_force   322.000
+optimal_fiber_length 0.11490
+tendon_slack_length 0.19270
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject radius
+activation1 45.410560
+activation2 17.482520
+mass 0.031070
+endmuscle
+
+beginmuscle tric_l_1
+beginpoints
+-0.01819 -0.01616  0.01247 segment ulna_r
+-0.03222 -0.04378 -0.02056 segment scapula_r
+endpoints
+begingroups
+triceps 
+endgroups
+max_force   223.000
+optimal_fiber_length 0.10080
+tendon_slack_length 0.20410
+pennation_angle 10.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.026970
+endmuscle
+
+beginmuscle tric_l_2
+beginpoints
+-0.00519 -0.01833  0.00596 segment ulna_r
+-0.02425 -0.04193 -0.03744 segment scapula_r
+endpoints
+begingroups
+triceps 
+endgroups
+max_force   296.000
+optimal_fiber_length 0.08810
+tendon_slack_length 0.21930
+pennation_angle 10.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.029550
+endmuscle
+
+beginmuscle tric_l_3
+beginpoints
+-0.00261 -0.04828  0.00593 segment ulna_r
+-0.02254 -0.03911 -0.02787 segment scapula_r
+endpoints
+begingroups
+triceps 
+endgroups
+max_force   283.000
+optimal_fiber_length 0.11830
+tendon_slack_length 0.21800
+pennation_angle 10.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.029640
+endmuscle
+
+beginmuscle tric_l_4
+beginpoints
+-0.00029 -0.04450  0.00102 segment ulna_r
+-0.02425 -0.04193 -0.03744 segment scapula_r
+endpoints
+begingroups
+triceps 
+endgroups
+max_force   327.000
+optimal_fiber_length 0.12260
+tendon_slack_length 0.21970
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.032030
+endmuscle
+
+beginmuscle lat_dorsi_1
+beginpoints
+ 0.00980 -0.12600  0.15260 segment thorax
+ 0.00138 -0.03789 -0.01764 segment humerus_r
+endpoints
+begingroups
+lat_dorsi 
+endgroups
+max_force    56.000
+optimal_fiber_length 0.23430
+tendon_slack_length 0.09000
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 62.324930
+activation2 21.008400
+mass 0.014980
+endmuscle
+
+beginmuscle lat_dorsi_2
+beginpoints
+ 0.01300 -0.19670  0.14820 segment thorax
+ 0.00213 -0.04447 -0.01724 segment humerus_r
+endpoints
+begingroups
+lat_dorsi 
+endgroups
+max_force    88.000
+optimal_fiber_length 0.28570
+tendon_slack_length 0.08300
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 62.324930
+activation2 21.008400
+mass 0.028830
+endmuscle
+
+beginmuscle lat_dorsi_3
+beginpoints
+ 0.01160 -0.25150  0.13920 segment thorax
+ 0.00213 -0.04447 -0.01724 segment humerus_r
+endpoints
+begingroups
+lat_dorsi 
+endgroups
+max_force   129.000
+optimal_fiber_length 0.29510
+tendon_slack_length 0.10500
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 62.324930
+activation2 21.008400
+mass 0.043050
+endmuscle
+
+beginmuscle lat_dorsi_4
+beginpoints
+ 0.02110 -0.31090  0.12800 segment thorax
+ 0.00138 -0.03789 -0.01764 segment humerus_r
+endpoints
+begingroups
+lat_dorsi 
+endgroups
+max_force    96.000
+optimal_fiber_length 0.32060
+tendon_slack_length 0.12000
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 62.324930
+activation2 21.008400
+mass 0.035150
+endmuscle
+
+beginmuscle lat_dorsi_5
+beginpoints
+ 0.07920 -0.30840  0.09920 segment thorax
+ 0.00138 -0.03789 -0.01764 segment humerus_r
+endpoints
+begingroups
+lat_dorsi 
+endgroups
+max_force    88.000
+optimal_fiber_length 0.31290
+tendon_slack_length 0.07200
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 62.324930
+activation2 21.008400
+mass 0.031570
+endmuscle
+
+beginmuscle lat_dorsi_6
+beginpoints
+ 0.10420 -0.29780  0.08510 segment thorax
+ 0.00213 -0.04447 -0.01724 segment humerus_r
+endpoints
+begingroups
+lat_dorsi 
+endgroups
+max_force   105.000
+optimal_fiber_length 0.34020
+tendon_slack_length 0.06900
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 62.324930
+activation2 21.008400
+mass 0.040690
+endmuscle
+
+beginmuscle pect_maj_t_1
+beginpoints
+ 0.06120 -0.15740 -0.03210 segment thorax
+ 0.01035 -0.06310 -0.01727 segment humerus_r
+endpoints
+begingroups
+pect_maj_t 
+endgroups
+max_force   125.000
+optimal_fiber_length 0.18840
+tendon_slack_length 0.03600
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 63.469170
+activation2 21.276600
+mass 0.026920
+endmuscle
+
+beginmuscle pect_maj_t_2
+beginpoints
+ 0.02790 -0.14030 -0.03920 segment thorax
+ 0.01089 -0.06875 -0.01702 segment humerus_r
+endpoints
+begingroups
+pect_maj_t 
+endgroups
+max_force   118.000
+optimal_fiber_length 0.18300
+tendon_slack_length 0.04300
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 78.287850
+activation2 23.752970
+mass 0.024480
+endmuscle
+
+beginmuscle pect_maj_t_3
+beginpoints
+ 0.00840 -0.12230 -0.03480 segment thorax
+ 0.01078 -0.07380 -0.01675 segment humerus_r
+endpoints
+begingroups
+pect_maj_t 
+endgroups
+max_force   165.000
+optimal_fiber_length 0.18530
+tendon_slack_length 0.05300
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 78.287850
+activation2 23.752970
+mass 0.034750
+endmuscle
+
+beginmuscle pect_maj_t_4
+beginpoints
+ 0.01320 -0.10060 -0.03720 segment thorax
+ 0.01111 -0.06428 -0.01752 segment humerus_r
+endpoints
+begingroups
+pect_maj_t 
+endgroups
+max_force   157.000
+optimal_fiber_length 0.18330
+tendon_slack_length 0.02800
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 112.516460
+activation2 28.328610
+mass 0.033010
+endmuscle
+
+beginmuscle pect_maj_t_5
+beginpoints
+ 0.00710 -0.04180 -0.01900 segment thorax
+ 0.01112 -0.05418 -0.01808 segment humerus_r
+endpoints
+begingroups
+pect_maj_t 
+endgroups
+max_force   133.000
+optimal_fiber_length 0.15000
+tendon_slack_length 0.02600
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 112.516460
+activation2 28.328610
+mass 0.022730
+endmuscle
+
+beginmuscle pect_maj_t_6
+beginpoints
+ 0.01160 -0.02270 -0.00610 segment thorax
+ 0.01111 -0.06428 -0.01752 segment humerus_r
+endpoints
+begingroups
+pect_maj_t 
+endgroups
+max_force   198.000
+optimal_fiber_length 0.14490
+tendon_slack_length 0.03600
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 45.410560
+activation2 17.482520
+mass 0.032430
+endmuscle
+
+beginmuscle pect_maj_c_1
+beginpoints
+ 0.06298  0.01075 -0.01636 segment clavicle_r
+ 0.01184 -0.08869 -0.01555 segment humerus_r
+endpoints
+begingroups
+pect_maj_c 
+endgroups
+max_force   179.000
+optimal_fiber_length 0.13630
+tendon_slack_length 0.01700
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 45.410560
+activation2 17.482520
+mass 0.027690
+endmuscle
+
+beginmuscle pect_maj_c_2
+beginpoints
+ 0.08276  0.01309 -0.01496 segment clavicle_r
+ 0.01112 -0.05418 -0.01808 segment humerus_r
+endpoints
+begingroups
+pect_maj_c 
+endgroups
+max_force   113.000
+optimal_fiber_length 0.10910
+tendon_slack_length 0.01400
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ter_lat_pec
+activation1 45.410560
+activation2 17.482520
+mass 0.013990
+endmuscle
+
+beginmuscle tric_med_1
+beginpoints
+-0.00714 -0.14854 -0.00007 segment humerus_r
+-0.01561 -0.00771  0.02364 segment ulna_r
+endpoints
+begingroups
+tric_med 
+endgroups
+max_force   263.000
+optimal_fiber_length 0.08070
+tendon_slack_length 0.08750
+pennation_angle 17.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 45.410560
+activation2 17.482520
+mass 0.018400
+endmuscle
+
+beginmuscle tric_med_2
+beginpoints
+-0.00622 -0.12402  0.00296 segment humerus_r
+-0.01561 -0.00771  0.02364 segment ulna_r
+endpoints
+begingroups
+tric_med 
+endgroups
+max_force   256.000
+optimal_fiber_length 0.07730
+tendon_slack_length 0.11220
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.017650
+endmuscle
+
+beginmuscle tric_med_3
+beginpoints
+ 0.00936 -0.24184  0.01321 segment humerus_r
+-0.01561 -0.00771  0.02364 segment ulna_r
+endpoints
+begingroups
+tric_med 
+endgroups
+max_force   240.000
+optimal_fiber_length 0.06020
+tendon_slack_length 0.01070
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.011950
+endmuscle
+
+beginmuscle tric_med_4
+beginpoints
+ 0.00264 -0.19989  0.01615 segment humerus_r
+-0.01561 -0.00771  0.02364 segment ulna_r
+endpoints
+begingroups
+tric_med 
+endgroups
+max_force   211.000
+optimal_fiber_length 0.07460
+tendon_slack_length 0.04040
+pennation_angle  8.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.013950
+endmuscle
+
+beginmuscle tric_med_5
+beginpoints
+-0.00580 -0.15646  0.00909 segment humerus_r
+-0.01561 -0.00771  0.02364 segment ulna_r
+endpoints
+begingroups
+tric_med 
+endgroups
+max_force   107.000
+optimal_fiber_length 0.08070
+tendon_slack_length 0.07380
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.007700
+endmuscle
+
+beginmuscle brachialis_1
+beginpoints
+ 0.00954 -0.14854  0.00625 segment humerus_r
+-0.01536 -0.04443 -0.00610 segment ulna_r
+endpoints
+begingroups
+brachialis 
+endgroups
+max_force   314.000
+optimal_fiber_length 0.08760
+tendon_slack_length 0.08070
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow_circ
+activation1 62.324930
+activation2 21.008400
+mass 0.029100
+endmuscle
+
+beginmuscle brachialis_2
+beginpoints
+-0.00285 -0.15400 -0.00517 segment humerus_r
+-0.01911 -0.04206 -0.00329 segment ulna_r
+endpoints
+begingroups
+brachialis 
+endgroups
+max_force   158.000
+optimal_fiber_length 0.09530
+tendon_slack_length 0.05920
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow_circ
+activation1 62.324930
+activation2 21.008400
+mass 0.015900
+endmuscle
+
+beginmuscle brachialis_3
+beginpoints
+-0.00870 -0.18035 -0.00033 segment humerus_r
+-0.02492 -0.03076 -0.00037 segment ulna_r
+endpoints
+begingroups
+brachialis 
+endgroups
+max_force   157.000
+optimal_fiber_length 0.08700
+tendon_slack_length 0.03940
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow_circ
+activation1 62.324930
+activation2 21.008400
+mass 0.014650
+endmuscle
+
+beginmuscle brachialis_4
+beginpoints
+-0.00018 -0.19078 -0.00104 segment humerus_r
+-0.01581 -0.04166 -0.00460 segment ulna_r
+endpoints
+begingroups
+brachialis 
+endgroups
+max_force    87.000
+optimal_fiber_length 0.07580
+tendon_slack_length 0.03170
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow_circ
+activation1 62.324930
+activation2 21.008400
+mass 0.007000
+endmuscle
+
+beginmuscle brachialis_5
+beginpoints
+-0.01268 -0.22134  0.00514 segment humerus_r
+-0.02218 -0.03756 -0.00186 segment ulna_r
+endpoints
+begingroups
+brachialis 
+endgroups
+max_force   101.000
+optimal_fiber_length 0.06190
+tendon_slack_length 0.02090
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow_circ
+activation1 62.324930
+activation2 21.008400
+mass 0.006600
+endmuscle
+
+beginmuscle brachialis_6
+beginpoints
+-0.00198 -0.22967  0.00021 segment humerus_r
+-0.02445 -0.03273 -0.00283 segment ulna_r
+endpoints
+begingroups
+brachialis 
+endgroups
+max_force   104.000
+optimal_fiber_length 0.04720
+tendon_slack_length 0.03500
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow_circ
+activation1 62.324930
+activation2 21.008400
+mass 0.004100
+endmuscle
+
+beginmuscle brachialis_7
+beginpoints
+-0.01261 -0.23660  0.00399 segment humerus_r
+-0.01286 -0.03966 -0.00573 segment ulna_r
+endpoints
+begingroups
+brachialis 
+endgroups
+max_force   118.000
+optimal_fiber_length 0.06210
+tendon_slack_length 0.00760
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow_circ
+activation1 62.324930
+activation2 21.008400
+mass 0.006500
+endmuscle
+
+beginmuscle brachiorad_1
+beginpoints
+ 0.00282 -0.19968  0.00875 segment humerus_r
+ 0.00812 -0.22513 -0.07037 segment radius_r
+endpoints
+begingroups
+brachiorad 
+endgroups
+max_force    30.000
+optimal_fiber_length 0.16130
+tendon_slack_length 0.11970
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.004700
+endmuscle
+
+beginmuscle brachiorad_2
+beginpoints
+ 0.00446 -0.21750  0.01532 segment humerus_r
+ 0.00812 -0.22513 -0.07037 segment radius_r
+endpoints
+begingroups
+brachiorad 
+endgroups
+max_force    82.000
+optimal_fiber_length 0.16130
+tendon_slack_length 0.11970
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.014000
+endmuscle
+
+beginmuscle brachiorad_3
+beginpoints
+ 0.00600 -0.23430  0.01649 segment humerus_r
+ 0.00812 -0.22513 -0.07037 segment radius_r
+endpoints
+begingroups
+brachiorad 
+endgroups
+max_force    52.000
+optimal_fiber_length 0.10660
+tendon_slack_length 0.15420
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.005970
+endmuscle
+
+beginmuscle pron_teres_1
+beginpoints
+-0.03769 -0.27686  0.00635 segment humerus_r
+ 0.02077 -0.10531  0.00781 segment radius_r
+ 0.02077 -0.10531  0.00782 segment radius_r
+endpoints
+begingroups
+pron_teres_hr 
+endgroups
+max_force   510.000
+optimal_fiber_length 0.06100
+tendon_slack_length 0.08510
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ulna_radius
+activation1 62.324930
+activation2 21.008400
+mass 0.027500
+endmuscle
+
+beginmuscle pron_teres_2
+beginpoints
+-0.01220 -0.02454 -0.01563 segment ulna_r
+ 0.02229 -0.08157  0.00341 segment radius_r
+endpoints
+begingroups
+pron_teres_ur 
+endgroups
+max_force   141.000
+optimal_fiber_length 0.03910
+tendon_slack_length 0.04840
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject ulna_radius
+activation1 62.324930
+activation2 21.008400
+mass 0.004330
+endmuscle
+
+beginmuscle supinator_1
+beginpoints
+ 0.02112 -0.08347 -0.00882 segment ulna_r
+ 0.01810 -0.08131  0.00588 segment radius_r
+endpoints
+begingroups
+supinator_ur 
+endgroups
+max_force    47.000
+optimal_fiber_length 0.02670
+tendon_slack_length 0.02540
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject supinator
+activation1 62.324930
+activation2 21.008400
+mass 0.000840
+endmuscle
+
+beginmuscle supinator_2
+beginpoints
+ 0.02110 -0.06680 -0.00860 segment ulna_r
+ 0.01850 -0.06780  0.00620 segment radius_r
+endpoints
+begingroups
+supinator_ur 
+endgroups
+max_force   232.000
+optimal_fiber_length 0.02600
+tendon_slack_length 0.02310
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject supinator
+activation1 62.324930
+activation2 21.008400
+mass 0.003640
+endmuscle
+
+beginmuscle supinator_3
+beginpoints
+ 0.02052 -0.05021 -0.00886 segment ulna_r
+ 0.01785 -0.05686  0.00441 segment radius_r
+endpoints
+begingroups
+supinator_ur 
+endgroups
+max_force   126.000
+optimal_fiber_length 0.02520
+tendon_slack_length 0.01500
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject supinator
+activation1 62.324930
+activation2 21.008400
+mass 0.003360
+endmuscle
+
+beginmuscle supinator_4
+beginpoints
+ 0.01930 -0.04058 -0.00751 segment ulna_r
+ 0.01614 -0.04850  0.00112 segment radius_r
+endpoints
+begingroups
+supinator_ur 
+endgroups
+max_force   148.000
+optimal_fiber_length 0.02630
+tendon_slack_length 0.01450
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject supinator
+activation1 62.324930
+activation2 21.008400
+mass 0.002960
+endmuscle
+
+beginmuscle supinator_5
+beginpoints
+ 0.01794 -0.03097 -0.00612 segment ulna_r
+ 0.01434 -0.04015 -0.00211 segment radius_r
+endpoints
+begingroups
+supinator_ur 
+endgroups
+max_force   285.000
+optimal_fiber_length 0.02740
+tendon_slack_length 0.01390
+pennation_angle  2.000
+activation  1.000
+visible yes
+wrapobject supinator
+activation1 62.324930
+activation2 21.008400
+mass 0.006760
+endmuscle
+
+beginmuscle pron_quad_1
+beginpoints
+ 0.01513 -0.20699 -0.01734 segment radius_r
+ 0.02616 -0.19942 -0.05486 segment ulna_r
+endpoints
+begingroups
+pron_quad 
+endgroups
+max_force    73.000
+optimal_fiber_length 0.03770
+tendon_slack_length 0.00100
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject pron_quad
+activation1 62.324930
+activation2 21.008400
+mass 0.001630
+endmuscle
+
+beginmuscle pron_quad_2
+beginpoints
+ 0.01650 -0.21195 -0.01749 segment radius_r
+ 0.03146 -0.21573 -0.06108 segment ulna_r
+endpoints
+begingroups
+pron_quad 
+endgroups
+max_force   178.000
+optimal_fiber_length 0.03860
+tendon_slack_length 0.00100
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject pron_quad
+activation1 62.324930
+activation2 21.008400
+mass 0.003470
+endmuscle
+
+beginmuscle pron_quad_3
+beginpoints
+ 0.01740 -0.22071 -0.02229 segment radius_r
+ 0.03432 -0.22684 -0.06487 segment ulna_r
+endpoints
+begingroups
+pron_quad 
+endgroups
+max_force   219.000
+optimal_fiber_length 0.03520
+tendon_slack_length 0.00100
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject pron_quad
+activation1 62.324930
+activation2 21.008400
+mass 0.004930
+endmuscle
+
+beginmuscle tric_lat_1
+beginpoints
+ 0.00631 -0.05495  0.01100 segment humerus_r
+-0.01587  0.00793  0.02090 segment ulna_r
+endpoints
+begingroups
+tric_lat 
+endgroups
+max_force   153.000
+optimal_fiber_length 0.07580
+tendon_slack_length 0.17070
+pennation_angle  0.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.012500
+endmuscle
+
+beginmuscle tric_lat_2
+beginpoints
+ 0.00631 -0.05495  0.01100 segment humerus_r
+-0.01498  0.00540  0.02210 segment ulna_r
+endpoints
+begingroups
+tric_lat 
+endgroups
+max_force   410.000
+optimal_fiber_length 0.07660
+tendon_slack_length 0.17700
+pennation_angle  5.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.033200
+endmuscle
+
+beginmuscle tric_lat_3
+beginpoints
+ 0.00631 -0.05495  0.01100 segment humerus_r
+-0.00580  0.00000  0.02015 segment ulna_r
+endpoints
+begingroups
+tric_lat 
+endgroups
+max_force   219.000
+optimal_fiber_length 0.06560
+tendon_slack_length 0.19110
+pennation_angle 10.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.015200
+endmuscle
+
+beginmuscle tric_lat_4
+beginpoints
+ 0.01211 -0.09512  0.01048 segment humerus_r
+-0.00580  0.00000  0.02015 segment ulna_r
+endpoints
+begingroups
+tric_lat 
+endgroups
+max_force   275.000
+optimal_fiber_length 0.06380
+tendon_slack_length 0.15700
+pennation_angle 10.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.016200
+endmuscle
+
+beginmuscle tric_lat_5
+beginpoints
+ 0.01211 -0.09512  0.01048 segment humerus_r
+-0.00814  0.00406  0.01884 segment ulna_r
+endpoints
+begingroups
+tric_lat 
+endgroups
+max_force    87.000
+optimal_fiber_length 0.06380
+tendon_slack_length 0.15700
+pennation_angle 17.000
+activation  1.000
+visible yes
+wrapobject elbow
+activation1 62.324930
+activation2 21.008400
+mass 0.005850
+endmuscle
+
+beginmuscle anconeus_1
+beginpoints
+ 0.01337 -0.29227  0.01291 segment humerus_r
+ 0.00650 -0.02074  0.01047 segment ulna_r
+endpoints
+begingroups
+anconeus 
+endgroups
+max_force    31.000
+optimal_fiber_length 0.02520
+tendon_slack_length 0.00640
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.000830
+endmuscle
+
+beginmuscle anconeus_2
+beginpoints
+ 0.01153 -0.29614  0.01149 segment humerus_r
+ 0.00769 -0.02394  0.00924 segment ulna_r
+endpoints
+begingroups
+anconeus 
+endgroups
+max_force    70.000
+optimal_fiber_length 0.02020
+tendon_slack_length 0.00800
+pennation_angle 15.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.001500
+endmuscle
+
+beginmuscle anconeus_3
+beginpoints
+ 0.01201 -0.28689  0.01448 segment humerus_r
+ 0.00530 -0.01763  0.01169 segment ulna_r
+endpoints
+begingroups
+anconeus 
+endgroups
+max_force    25.000
+optimal_fiber_length 0.02280
+tendon_slack_length 0.00430
+pennation_angle  0.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.000600
+endmuscle
+
+beginmuscle anconeus_4
+beginpoints
+ 0.01592 -0.29678  0.00632 segment humerus_r
+ 0.01530 -0.05532  0.00283 segment ulna_r
+endpoints
+begingroups
+anconeus 
+endgroups
+max_force   118.000
+optimal_fiber_length 0.02700
+tendon_slack_length 0.03000
+pennation_angle 18.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.002200
+endmuscle
+
+beginmuscle anconeus_5
+beginpoints
+ 0.01446 -0.29765  0.00818 segment humerus_r
+ 0.01090 -0.04041  0.00689 segment ulna_r
+endpoints
+begingroups
+anconeus 
+endgroups
+max_force   118.000
+optimal_fiber_length 0.02660
+tendon_slack_length 0.02000
+pennation_angle 23.000
+activation  1.000
+visible yes
+activation1 62.324930
+activation2 21.008400
+mass 0.003330
+endmuscle
+

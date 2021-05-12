@@ -1,0 +1,3894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSimDocument Version="10902">
+<Model name="DAS2">
+	<defaults>
+		<Schutte1993Muscle name="defaultmuscle">
+			<max_isometric_force> 0.001000000000 </max_isometric_force>
+			<optimal_fiber_length> 10.000000000000 </optimal_fiber_length>
+			<tendon_slack_length> 1.000000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<max_contraction_velocity> 10.000000000000 </max_contraction_velocity>
+			<damping> 0.100000000000 </damping>
+			<activation1> 7.667000000000 </activation1>
+			<activation2> 1.459854000000 </activation2>
+			<time_scale> 0.100000000000 </time_scale>
+			<tendon_force_length_curve>
+					<NaturalCubicSpline>
+						<x> -10.000000000000 -0.002000000000 -0.001000000000 0.000000000000 0.001310000000 0.002810000000 0.004310000000 0.005810000000 0.007310000000 0.008810000000 0.010300000000 0.011800000000 0.012300000000 9.200000000000 9.201000000000 9.202000000000 20.000000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.000000000000 0.010800000000 0.025700000000 0.043500000000 0.065200000000 0.091500000000 0.123000000000 0.161000000000 0.208000000000 0.227000000000 345.000000000000 345.000000000000 345.000000000000 345.000000000000 </y>
+					</NaturalCubicSpline>
+			</tendon_force_length_curve>
+			<active_force_length_curve>
+					<NaturalCubicSpline>
+						<x> -0.020000000000 -0.010000000000 0.000000000000 0.100000000000 0.200000000000 0.300000000000 0.400000000000 0.500000000000 0.600000000000 0.700000000000 0.800000000000 0.900000000000 1.000000000000 1.100000000000 1.200000000000 1.300000000000 1.400000000000 1.500000000000 1.600000000000 1.700000000000 1.800000000000 1.900000000000 2.000000000000 2.010000000000 2.020000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.190000000000 0.360000000000 0.510000000000 0.640000000000 0.750000000000 0.840000000000 0.910000000000 0.960000000000 0.990000000000 1.000000000000 0.990000000000 0.960000000000 0.910000000000 0.840000000000 0.750000000000 0.640000000000 0.510000000000 0.360000000000 0.190000000000 0.000000000000 0.000000000000 0.000000000000 </y>
+					</NaturalCubicSpline>
+			</active_force_length_curve>
+			<passive_force_length_curve>
+					<NaturalCubicSpline>
+						<x> 0.980000000000 0.990000000000 1.000000000000 1.100000000000 1.200000000000 1.300000000000 1.400000000000 1.500000000000 1.600000000000 1.700000000000 1.800000000000 1.900000000000 2.000000000000 2.100000000000 2.200000000000 2.300000000000 2.400000000000 2.500000000000 2.600000000000 2.700000000000 2.800000000000 2.900000000000 3.000000000000 4.000000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.010000000000 0.040000000000 0.090000000000 0.160000000000 0.250000000000 0.360000000000 0.490000000000 0.640000000000 0.810000000000 1.000000000000 1.210000000000 1.440000000000 1.690000000000 1.960000000000 2.250000000000 2.560000000000 2.890000000000 3.240000000000 3.610000000000 4.000000000000 9.000000000000 </y>
+					</NaturalCubicSpline>
+			</passive_force_length_curve>
+			<force_velocity_curve>
+					<NaturalCubicSpline>
+						<x> -1.000000000000 -0.950000000000 -0.900000000000 -0.850000000000 -0.800000000000 -0.750000000000 -0.700000000000 -0.650000000000 -0.600000000000 -0.550000000000 -0.500000000000 -0.450000000000 -0.400000000000 -0.350000000000 -0.300000000000 -0.250000000000 -0.200000000000 -0.150000000000 -0.100000000000 -0.050000000000 0.000000000000 0.050000000000 0.100000000000 0.150000000000 0.200000000000 0.250000000000 0.300000000000 0.350000000000 0.400000000000 0.450000000000 0.500000000000 0.550000000000 0.600000000000 0.650000000000 0.700000000000 0.750000000000 0.800000000000 0.850000000000 0.900000000000 0.950000000000 1.000000000000 </x>
+						<y> 0.000000000000 0.010417000000 0.021739000000 0.034091000000 0.047619000000 0.062500000000 0.078947000000 0.097222000000 0.117647000000 0.140625000000 0.166667000000 0.196429000000 0.230769000000 0.270833000000 0.318182000000 0.375000000000 0.444444000000 0.531250000000 0.642857000000 0.791667000000 1.000000000000 1.482014000000 1.601571000000 1.655791000000 1.686739000000 1.706751000000 1.720753000000 1.731099000000 1.739055000000 1.745365000000 1.750490000000 1.754736000000 1.758312000000 1.761364000000 1.763999000000 1.766298000000 1.768321000000 1.770115000000 1.771717000000 1.773155000000 1.774455000000 </y>
+					</NaturalCubicSpline>
+			</force_velocity_curve>
+		</Schutte1993Muscle>
+		<Thelen2003Muscle name="defaultmuscle">
+			<max_isometric_force> 0.001000000000 </max_isometric_force>
+			<optimal_fiber_length> 10.000000000000 </optimal_fiber_length>
+			<tendon_slack_length> 1.000000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<max_contraction_velocity> 10.000000000000 </max_contraction_velocity>
+			<damping> 0.100000000000 </damping>
+			<activation1> 7.667000000000 </activation1>
+			<activation2> 1.459854000000 </activation2>
+			<time_scale> 0.100000000000 </time_scale>
+			<tendon_force_length_curve>
+					<NaturalCubicSpline>
+						<x> -10.000000000000 -0.002000000000 -0.001000000000 0.000000000000 0.001310000000 0.002810000000 0.004310000000 0.005810000000 0.007310000000 0.008810000000 0.010300000000 0.011800000000 0.012300000000 9.200000000000 9.201000000000 9.202000000000 20.000000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.000000000000 0.010800000000 0.025700000000 0.043500000000 0.065200000000 0.091500000000 0.123000000000 0.161000000000 0.208000000000 0.227000000000 345.000000000000 345.000000000000 345.000000000000 345.000000000000 </y>
+					</NaturalCubicSpline>
+			</tendon_force_length_curve>
+			<active_force_length_curve>
+					<NaturalCubicSpline>
+						<x> -0.020000000000 -0.010000000000 0.000000000000 0.100000000000 0.200000000000 0.300000000000 0.400000000000 0.500000000000 0.600000000000 0.700000000000 0.800000000000 0.900000000000 1.000000000000 1.100000000000 1.200000000000 1.300000000000 1.400000000000 1.500000000000 1.600000000000 1.700000000000 1.800000000000 1.900000000000 2.000000000000 2.010000000000 2.020000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.190000000000 0.360000000000 0.510000000000 0.640000000000 0.750000000000 0.840000000000 0.910000000000 0.960000000000 0.990000000000 1.000000000000 0.990000000000 0.960000000000 0.910000000000 0.840000000000 0.750000000000 0.640000000000 0.510000000000 0.360000000000 0.190000000000 0.000000000000 0.000000000000 0.000000000000 </y>
+					</NaturalCubicSpline>
+			</active_force_length_curve>
+			<passive_force_length_curve>
+					<NaturalCubicSpline>
+						<x> 0.980000000000 0.990000000000 1.000000000000 1.100000000000 1.200000000000 1.300000000000 1.400000000000 1.500000000000 1.600000000000 1.700000000000 1.800000000000 1.900000000000 2.000000000000 2.100000000000 2.200000000000 2.300000000000 2.400000000000 2.500000000000 2.600000000000 2.700000000000 2.800000000000 2.900000000000 3.000000000000 4.000000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.010000000000 0.040000000000 0.090000000000 0.160000000000 0.250000000000 0.360000000000 0.490000000000 0.640000000000 0.810000000000 1.000000000000 1.210000000000 1.440000000000 1.690000000000 1.960000000000 2.250000000000 2.560000000000 2.890000000000 3.240000000000 3.610000000000 4.000000000000 9.000000000000 </y>
+					</NaturalCubicSpline>
+			</passive_force_length_curve>
+			<force_velocity_curve>
+					<NaturalCubicSpline>
+						<x> -1.000000000000 -0.950000000000 -0.900000000000 -0.850000000000 -0.800000000000 -0.750000000000 -0.700000000000 -0.650000000000 -0.600000000000 -0.550000000000 -0.500000000000 -0.450000000000 -0.400000000000 -0.350000000000 -0.300000000000 -0.250000000000 -0.200000000000 -0.150000000000 -0.100000000000 -0.050000000000 0.000000000000 0.050000000000 0.100000000000 0.150000000000 0.200000000000 0.250000000000 0.300000000000 0.350000000000 0.400000000000 0.450000000000 0.500000000000 0.550000000000 0.600000000000 0.650000000000 0.700000000000 0.750000000000 0.800000000000 0.850000000000 0.900000000000 0.950000000000 1.000000000000 </x>
+						<y> 0.000000000000 0.010417000000 0.021739000000 0.034091000000 0.047619000000 0.062500000000 0.078947000000 0.097222000000 0.117647000000 0.140625000000 0.166667000000 0.196429000000 0.230769000000 0.270833000000 0.318182000000 0.375000000000 0.444444000000 0.531250000000 0.642857000000 0.791667000000 1.000000000000 1.482014000000 1.601571000000 1.655791000000 1.686739000000 1.706751000000 1.720753000000 1.731099000000 1.739055000000 1.745365000000 1.750490000000 1.754736000000 1.758312000000 1.761364000000 1.763999000000 1.766298000000 1.768321000000 1.770115000000 1.771717000000 1.773155000000 1.774455000000 </y>
+					</NaturalCubicSpline>
+			</force_velocity_curve>
+		</Thelen2003Muscle>
+		<Delp1990Muscle name="defaultmuscle">
+			<max_isometric_force> 0.001000000000 </max_isometric_force>
+			<optimal_fiber_length> 10.000000000000 </optimal_fiber_length>
+			<tendon_slack_length> 1.000000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<max_contraction_velocity> 10.000000000000 </max_contraction_velocity>
+			<damping> 0.100000000000 </damping>
+			<activation1> 7.667000000000 </activation1>
+			<activation2> 1.459854000000 </activation2>
+			<time_scale> 0.100000000000 </time_scale>
+			<tendon_force_length_curve>
+					<NaturalCubicSpline>
+						<x> -10.000000000000 -0.002000000000 -0.001000000000 0.000000000000 0.001310000000 0.002810000000 0.004310000000 0.005810000000 0.007310000000 0.008810000000 0.010300000000 0.011800000000 0.012300000000 9.200000000000 9.201000000000 9.202000000000 20.000000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.000000000000 0.010800000000 0.025700000000 0.043500000000 0.065200000000 0.091500000000 0.123000000000 0.161000000000 0.208000000000 0.227000000000 345.000000000000 345.000000000000 345.000000000000 345.000000000000 </y>
+					</NaturalCubicSpline>
+			</tendon_force_length_curve>
+			<active_force_length_curve>
+					<NaturalCubicSpline>
+						<x> -0.020000000000 -0.010000000000 0.000000000000 0.100000000000 0.200000000000 0.300000000000 0.400000000000 0.500000000000 0.600000000000 0.700000000000 0.800000000000 0.900000000000 1.000000000000 1.100000000000 1.200000000000 1.300000000000 1.400000000000 1.500000000000 1.600000000000 1.700000000000 1.800000000000 1.900000000000 2.000000000000 2.010000000000 2.020000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.190000000000 0.360000000000 0.510000000000 0.640000000000 0.750000000000 0.840000000000 0.910000000000 0.960000000000 0.990000000000 1.000000000000 0.990000000000 0.960000000000 0.910000000000 0.840000000000 0.750000000000 0.640000000000 0.510000000000 0.360000000000 0.190000000000 0.000000000000 0.000000000000 0.000000000000 </y>
+					</NaturalCubicSpline>
+			</active_force_length_curve>
+			<passive_force_length_curve>
+					<NaturalCubicSpline>
+						<x> 0.980000000000 0.990000000000 1.000000000000 1.100000000000 1.200000000000 1.300000000000 1.400000000000 1.500000000000 1.600000000000 1.700000000000 1.800000000000 1.900000000000 2.000000000000 2.100000000000 2.200000000000 2.300000000000 2.400000000000 2.500000000000 2.600000000000 2.700000000000 2.800000000000 2.900000000000 3.000000000000 4.000000000000 </x>
+						<y> 0.000000000000 0.000000000000 0.000000000000 0.010000000000 0.040000000000 0.090000000000 0.160000000000 0.250000000000 0.360000000000 0.490000000000 0.640000000000 0.810000000000 1.000000000000 1.210000000000 1.440000000000 1.690000000000 1.960000000000 2.250000000000 2.560000000000 2.890000000000 3.240000000000 3.610000000000 4.000000000000 9.000000000000 </y>
+					</NaturalCubicSpline>
+			</passive_force_length_curve>
+			<force_velocity_curve>
+					<NaturalCubicSpline>
+						<x> -1.000000000000 -0.950000000000 -0.900000000000 -0.850000000000 -0.800000000000 -0.750000000000 -0.700000000000 -0.650000000000 -0.600000000000 -0.550000000000 -0.500000000000 -0.450000000000 -0.400000000000 -0.350000000000 -0.300000000000 -0.250000000000 -0.200000000000 -0.150000000000 -0.100000000000 -0.050000000000 0.000000000000 0.050000000000 0.100000000000 0.150000000000 0.200000000000 0.250000000000 0.300000000000 0.350000000000 0.400000000000 0.450000000000 0.500000000000 0.550000000000 0.600000000000 0.650000000000 0.700000000000 0.750000000000 0.800000000000 0.850000000000 0.900000000000 0.950000000000 1.000000000000 </x>
+						<y> 0.000000000000 0.010417000000 0.021739000000 0.034091000000 0.047619000000 0.062500000000 0.078947000000 0.097222000000 0.117647000000 0.140625000000 0.166667000000 0.196429000000 0.230769000000 0.270833000000 0.318182000000 0.375000000000 0.444444000000 0.531250000000 0.642857000000 0.791667000000 1.000000000000 1.482014000000 1.601571000000 1.655791000000 1.686739000000 1.706751000000 1.720753000000 1.731099000000 1.739055000000 1.745365000000 1.750490000000 1.754736000000 1.758312000000 1.761364000000 1.763999000000 1.766298000000 1.768321000000 1.770115000000 1.771717000000 1.773155000000 1.774455000000 </y>
+					</NaturalCubicSpline>
+			</force_velocity_curve>
+		</Delp1990Muscle>
+	</defaults>
+	<ForceSet>
+	<groups>
+		<ObjectGroup name="delt_scap">
+			<members>delt_scap10 delt_scap11 delt_scap_1 delt_scap_2 delt_scap_3 delt_scap_4 delt_scap_5 delt_scap_6 delt_scap_7 delt_scap_8 delt_scap_9 </members>
+		</ObjectGroup>
+		<ObjectGroup name="delt_clav">
+			<members>delt_clav_1 delt_clav_2 delt_clav_3 delt_clav_4 </members>
+		</ObjectGroup>
+		<ObjectGroup name="coracobr">
+			<members>coracobr_1 coracobr_2 coracobr_3 </members>
+		</ObjectGroup>
+		<ObjectGroup name="infra">
+			<members>infra_1 infra_2 infra_3 infra_4 infra_5 infra_6 </members>
+		</ObjectGroup>
+		<ObjectGroup name="ter_min">
+			<members>ter_min_1 ter_min_2 ter_min_3 </members>
+		</ObjectGroup>
+		<ObjectGroup name="ter_maj">
+			<members>ter_maj_1 ter_maj_2 ter_maj_3 ter_maj_4 </members>
+		</ObjectGroup>
+		<ObjectGroup name="supra">
+			<members>supra_1 supra_2 supra_3 supra_4 </members>
+		</ObjectGroup>
+		<ObjectGroup name="subscap">
+			<members>subscap10 subscap11 subscap_1 subscap_2 subscap_3 subscap_4 subscap_5 subscap_6 subscap_7 subscap_8 subscap_9 </members>
+		</ObjectGroup>
+		<ObjectGroup name="bic_c_l">
+			<members>bic_l </members>
+		</ObjectGroup>
+		<ObjectGroup name="bic_c_b">
+			<members>bic_b_1 bic_b_2 </members>
+		</ObjectGroup>
+		<ObjectGroup name="triceps">
+			<members>tric_l_1 tric_l_2 tric_l_3 tric_l_4 </members>
+		</ObjectGroup>
+		<ObjectGroup name="lat_dorsi">
+			<members>lat_dorsi_1 lat_dorsi_2 lat_dorsi_3 lat_dorsi_4 lat_dorsi_5 lat_dorsi_6 </members>
+		</ObjectGroup>
+		<ObjectGroup name="pect_maj_t">
+			<members>pect_maj_t_1 pect_maj_t_2 pect_maj_t_3 pect_maj_t_4 pect_maj_t_5 pect_maj_t_6 </members>
+		</ObjectGroup>
+		<ObjectGroup name="pect_maj_c">
+			<members>pect_maj_c_1 pect_maj_c_2 </members>
+		</ObjectGroup>
+		<ObjectGroup name="tric_med">
+			<members>tric_med_1 tric_med_2 tric_med_3 tric_med_4 tric_med_5 </members>
+		</ObjectGroup>
+		<ObjectGroup name="brachialis">
+			<members>brachialis_1 brachialis_2 brachialis_3 brachialis_4 brachialis_5 brachialis_6 brachialis_7 </members>
+		</ObjectGroup>
+		<ObjectGroup name="brachiorad">
+			<members>brachiorad_1 brachiorad_2 brachiorad_3 </members>
+		</ObjectGroup>
+		<ObjectGroup name="pron_teres_hr">
+			<members>pron_teres_1 </members>
+		</ObjectGroup>
+		<ObjectGroup name="pron_teres_ur">
+			<members>pron_teres_2 </members>
+		</ObjectGroup>
+		<ObjectGroup name="supinator_ur">
+			<members>supinator_1 supinator_2 supinator_3 supinator_4 supinator_5 </members>
+		</ObjectGroup>
+		<ObjectGroup name="pron_quad">
+			<members>pron_quad_1 pron_quad_2 pron_quad_3 </members>
+		</ObjectGroup>
+		<ObjectGroup name="tric_lat">
+			<members>tric_lat_1 tric_lat_2 tric_lat_3 tric_lat_4 tric_lat_5 </members>
+		</ObjectGroup>
+		<ObjectGroup name="anconeus">
+			<members>anconeus_1 anconeus_2 anconeus_3 anconeus_4 anconeus_5 </members>
+		</ObjectGroup>
+	</groups>
+	<objects>
+		<Schutte1993Muscle name="delt_scap_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.082780000000 -0.000820000000 -0.000860000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.013470000000 -0.111280000000 0.009190000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 289.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.112800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.080000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 25.902740000000 </activation1>
+			<activation2> 11.976050000000 </activation2>
+			<mass> 0.037030000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.049990000000 0.006270000000 0.001130000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.015550000000 -0.096450000000 0.005280000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 211.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.094900000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.076000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 25.902740000000 </activation1>
+			<activation2> 11.976050000000 </activation2>
+			<mass> 0.022690000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.014380000000 0.005740000000 -0.001410000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.015550000000 -0.096450000000 0.005280000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 446.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.083300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.062000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 25.902740000000 </activation1>
+			<activation2> 11.976050000000 </activation2>
+			<mass> 0.042140000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.003000000000 -0.004520000000 -0.004810000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.015710000000 -0.084670000000 0.004040000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 117.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.066600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.045000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 25.902740000000 </activation1>
+			<activation2> 11.976050000000 </activation2>
+			<mass> 0.008880000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.012990000000 0.000780000000 -0.017340000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.016780000000 -0.077820000000 0.000660000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 120.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.065600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.035000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 120.099210000000 </activation1>
+			<activation2> 29.154520000000 </activation2>
+			<mass> 0.008910000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_6">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.003620000000 0.005320000000 -0.005020000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.016460000000 -0.108940000000 0.006610000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 285.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.076700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.067000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 120.099210000000 </activation1>
+			<activation2> 29.154520000000 </activation2>
+			<mass> 0.024850000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_7">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.008490000000 0.000270000000 -0.009180000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.015790000000 -0.131600000000 0.005160000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 149.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.075400000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.082000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 120.099210000000 </activation1>
+			<activation2> 29.154520000000 </activation2>
+			<mass> 0.012750000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_8">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.014120000000 0.006170000000 -0.018100000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.016460000000 -0.108940000000 0.006610000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 215.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.071000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.065000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 120.099210000000 </activation1>
+			<activation2> 29.154520000000 </activation2>
+			<mass> 0.017300000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap_9">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.015690000000 0.004800000000 -0.024140000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018470000000 -0.117380000000 -0.004940000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 286.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.073200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.071000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 120.099210000000 </activation1>
+			<activation2> 29.154520000000 </activation2>
+			<mass> 0.023780000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap10">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.017710000000 0.005080000000 -0.033110000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018300000000 -0.105920000000 -0.006050000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 445.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.074800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.064000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 120.099210000000 </activation1>
+			<activation2> 29.154520000000 </activation2>
+			<mass> 0.037900000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_scap11">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.015220000000 0.008240000000 -0.045080000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018060000000 -0.092310000000 -0.008630000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 239.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.073700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.048000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 79.169340000000 </activation1>
+			<activation2> 23.923440000000 </activation2>
+			<mass> 0.020120000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_clav_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.150900000000 0.020650000000 0.001280000000 </location>
+					<body> clavicle_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018060000000 -0.092310000000 -0.008630000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 128.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.083600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.062000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 79.169340000000 </activation1>
+			<activation2> 23.923440000000 </activation2>
+			<mass> 0.012170000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_clav_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.129120000000 0.025780000000 0.004980000000 </location>
+					<body> clavicle_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.015360000000 -0.118830000000 -0.011590000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 160.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.094000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.088000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 79.169340000000 </activation1>
+			<activation2> 23.923440000000 </activation2>
+			<mass> 0.017010000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_clav_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.134290000000 0.022290000000 0.000730000000 </location>
+					<body> clavicle_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.016730000000 -0.099430000000 -0.009700000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 105.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.082400000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.067000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 79.169340000000 </activation1>
+			<activation2> 23.923440000000 </activation2>
+			<mass> 0.009830000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="delt_clav_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.131960000000 0.016410000000 0.000860000000 </location>
+					<body> clavicle_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.015360000000 -0.118830000000 -0.011590000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> deltoid </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 112.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.099100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.073000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 79.169340000000 </activation1>
+			<activation2> 23.923440000000 </activation2>
+			<mass> 0.012590000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="coracobr_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.008080000000 -0.008600000000 -0.076550000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002670000000 -0.146320000000 -0.007710000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 201.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.066000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.092000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 79.169340000000 </activation1>
+			<activation2> 23.923440000000 </activation2>
+			<mass> 0.015060000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="coracobr_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.013520000000 -0.014940000000 -0.078570000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.007640000000 -0.164850000000 -0.001760000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 148.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.068300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.104000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 133.353390000000 </activation1>
+			<activation2> 30.581040000000 </activation2>
+			<mass> 0.011510000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="coracobr_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.009270000000 -0.008190000000 -0.082600000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.005340000000 -0.173940000000 -0.005560000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 114.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.072700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.113000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 133.353390000000 </activation1>
+			<activation2> 30.581040000000 </activation2>
+			<mass> 0.009390000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="infra_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.060930000000 -0.041830000000 -0.019000000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.019940000000 0.009820000000 0.012570000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> infra_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 272.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.063300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.038000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 133.353390000000 </activation1>
+			<activation2> 30.581040000000 </activation2>
+			<mass> 0.019610000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="infra_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.126060000000 -0.092260000000 0.001150000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018350000000 0.016000000000 0.006910000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> infra_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 275.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.071900000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.107000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 133.353390000000 </activation1>
+			<activation2> 30.581040000000 </activation2>
+			<mass> 0.022450000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="infra_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.107700000000 -0.072580000000 0.000570000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018350000000 0.016000000000 0.006910000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> infra_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 194.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.067700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.084000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 133.353390000000 </activation1>
+			<activation2> 30.581040000000 </activation2>
+			<mass> 0.014880000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="infra_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.109110000000 -0.049460000000 -0.001220000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.016050000000 0.019120000000 0.007040000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> infra_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 207.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.069300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.071000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 133.353390000000 </activation1>
+			<activation2> 30.581040000000 </activation2>
+			<mass> 0.016310000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="infra_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.104390000000 -0.017080000000 -0.010720000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.016050000000 0.019120000000 0.007040000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> infra_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 302.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.069800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.050000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 82.956860000000 </activation1>
+			<activation2> 24.570020000000 </activation2>
+			<mass> 0.024140000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="infra_6">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.080700000000 -0.000380000000 0.000440000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.019170000000 0.012740000000 0.008360000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> infra_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 182.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.075300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.035000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 82.956860000000 </activation1>
+			<activation2> 24.570020000000 </activation2>
+			<mass> 0.015640000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="ter_min_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.055700000000 -0.066500000000 -0.014050000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.025780000000 -0.007030000000 0.008800000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_min_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 122.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.050100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.049000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 82.956860000000 </activation1>
+			<activation2> 24.570020000000 </activation2>
+			<mass> 0.007140000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="ter_min_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.065850000000 -0.069080000000 -0.006470000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.028080000000 -0.001240000000 0.008000000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_min_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 195.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.055000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.051000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 82.956860000000 </activation1>
+			<activation2> 24.570020000000 </activation2>
+			<mass> 0.012210000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="ter_min_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.038090000000 -0.042080000000 -0.016950000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.025780000000 -0.007030000000 0.008800000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_min_cyl </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 180.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.050600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.018000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 82.956860000000 </activation1>
+			<activation2> 24.570020000000 </activation2>
+			<mass> 0.010410000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="ter_maj_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.087430000000 -0.104920000000 -0.013100000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.006010000000 -0.065560000000 -0.009410000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 165.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.141100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.006000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 82.956860000000 </activation1>
+			<activation2> 24.570020000000 </activation2>
+			<mass> 0.026430000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="ter_maj_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.102740000000 -0.112480000000 -0.010450000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002860000000 -0.084270000000 -0.009460000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 85.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.159500000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.012000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 98.404260000000 </activation1>
+			<activation2> 26.595740000000 </activation2>
+			<mass> 0.015490000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="ter_maj_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.091230000000 -0.090070000000 0.000090000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.003800000000 -0.078380000000 -0.008990000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 200.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.152600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.015000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 98.404260000000 </activation1>
+			<activation2> 26.595740000000 </activation2>
+			<mass> 0.034810000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="ter_maj_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.079650000000 -0.095490000000 -0.011120000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.006520000000 -0.049770000000 -0.010670000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 158.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.109300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.034000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 98.404260000000 </activation1>
+			<activation2> 26.595740000000 </activation2>
+			<mass> 0.019710000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supra_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.060320000000 0.003240000000 -0.018590000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.023200000000 0.012560000000 0.002670000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 120.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.054100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.017000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 98.404260000000 </activation1>
+			<activation2> 26.595740000000 </activation2>
+			<mass> 0.007400000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supra_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.059640000000 0.011010000000 -0.006940000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.023200000000 0.012560000000 0.002670000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 113.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.059100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.025000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 98.404260000000 </activation1>
+			<activation2> 26.595740000000 </activation2>
+			<mass> 0.007560000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supra_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.094390000000 0.021040000000 -0.025010000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.012290000000 0.019230000000 -0.013720000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 258.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.056400000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.052000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 98.404260000000 </activation1>
+			<activation2> 26.595740000000 </activation2>
+			<mass> 0.016510000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supra_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.073850000000 0.021200000000 -0.040320000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.012290000000 0.019230000000 -0.013720000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 130.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.055400000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.031000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 63.469170000000 </activation1>
+			<activation2> 21.276600000000 </activation2>
+			<mass> 0.008190000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.061910000000 -0.013170000000 -0.022860000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.017900000000 0.012200000000 -0.014900000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002940000000 0.016540000000 -0.019230000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 44.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.055600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.028000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 63.469170000000 </activation1>
+			<activation2> 21.276600000000 </activation2>
+			<mass> 0.002810000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.083710000000 0.011980000000 -0.028050000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.019900000000 0.013600000000 -0.011000000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.000520000000 0.012940000000 -0.021640000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 78.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.064900000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.044000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 63.469170000000 </activation1>
+			<activation2> 21.276600000000 </activation2>
+			<mass> 0.005750000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.104940000000 -0.014490000000 -0.014210000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.007900000000 0.015300000000 -0.019200000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002940000000 0.016540000000 -0.019230000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 264.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.067600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.059000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 63.469170000000 </activation1>
+			<activation2> 21.276600000000 </activation2>
+			<mass> 0.020210000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.093830000000 -0.043610000000 -0.008000000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.000350000000 0.006410000000 -0.024880000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 274.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.074400000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.055000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 63.469170000000 </activation1>
+			<activation2> 21.276600000000 </activation2>
+			<mass> 0.023760000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.087440000000 -0.057050000000 -0.012240000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.004340000000 0.008570000000 -0.024580000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 114.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.079700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.066000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 63.469170000000 </activation1>
+			<activation2> 21.276600000000 </activation2>
+			<mass> 0.010330000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_6">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.105830000000 -0.079070000000 -0.003590000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.001770000000 0.002290000000 -0.028030000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 149.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.076200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.077000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 78.287850000000 </activation1>
+			<activation2> 23.752970000000 </activation2>
+			<mass> 0.012920000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_7">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.099860000000 -0.094660000000 -0.010070000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002440000000 0.000870000000 -0.026640000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 162.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.082000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.079000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 78.287850000000 </activation1>
+			<activation2> 23.752970000000 </activation2>
+			<mass> 0.015130000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_8">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.068470000000 -0.065450000000 -0.019920000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002440000000 0.000870000000 -0.026640000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 61.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.076500000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.040000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 112.516460000000 </activation1>
+			<activation2> 28.328610000000 </activation2>
+			<mass> 0.005320000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap_9">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.079750000000 -0.092100000000 -0.012290000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.006570000000 -0.003740000000 -0.023310000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 222.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.072100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.059000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 112.516460000000 </activation1>
+			<activation2> 28.328610000000 </activation2>
+			<mass> 0.018200000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap10">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.046360000000 -0.054260000000 -0.021090000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.007410000000 -0.017040000000 -0.015540000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 47.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.067600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.010000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.003610000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="subscap11">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.036130000000 -0.045670000000 -0.028810000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.009740000000 -0.022860000000 -0.010250000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 16.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.064300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.001000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.001150000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="bic_l">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.014010000000 -0.002490000000 -0.042880000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.021700000000 0.000100000000 -0.001100000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002820000000 -0.036090000000 -0.010720000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> inf_sup_sub </wrap_object>
+				</PathWrap>
+				<PathWrap>
+					<wrap_object> radius </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 347.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.129200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.233500000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.066200000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="bic_b_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.009150000000 -0.008330000000 -0.082440000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002820000000 -0.036090000000 -0.010720000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> radius </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 173.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.117000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.191300000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.020790000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="bic_b_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.009150000000 -0.008330000000 -0.082440000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.002820000000 -0.036090000000 -0.010720000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> radius </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 322.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.114900000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.192700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.031070000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_l_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.018190000000 -0.016160000000 0.012470000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.032220000000 -0.043780000000 -0.020560000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 223.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.100800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.204100000000 </tendon_slack_length>
+			<pennation_angle> 0.174532925199 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.026970000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_l_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.005190000000 -0.018330000000 0.005960000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.024250000000 -0.041930000000 -0.037440000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 296.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.088100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.219300000000 </tendon_slack_length>
+			<pennation_angle> 0.174532925199 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.029550000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_l_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.002610000000 -0.048280000000 0.005930000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.022540000000 -0.039110000000 -0.027870000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 283.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.118300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.218000000000 </tendon_slack_length>
+			<pennation_angle> 0.174532925199 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.029640000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_l_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.000290000000 -0.044500000000 0.001020000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.024250000000 -0.041930000000 -0.037440000000 </location>
+					<body> scapula_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 327.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.122600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.219700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.032030000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="lat_dorsi_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.009800000000 -0.126000000000 0.152600000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.001380000000 -0.037890000000 -0.017640000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 56.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.234300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.090000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.014980000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="lat_dorsi_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.013000000000 -0.196700000000 0.148200000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.002130000000 -0.044470000000 -0.017240000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 88.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.285700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.083000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.028830000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="lat_dorsi_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.011600000000 -0.251500000000 0.139200000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.002130000000 -0.044470000000 -0.017240000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 129.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.295100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.105000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.043050000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="lat_dorsi_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.021100000000 -0.310900000000 0.128000000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.001380000000 -0.037890000000 -0.017640000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 96.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.320600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.120000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.035150000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="lat_dorsi_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.079200000000 -0.308400000000 0.099200000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.001380000000 -0.037890000000 -0.017640000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 88.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.312900000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.072000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.031570000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="lat_dorsi_6">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.104200000000 -0.297800000000 0.085100000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.002130000000 -0.044470000000 -0.017240000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 105.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.340200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.069000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.040690000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_t_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.061200000000 -0.157400000000 -0.032100000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.010350000000 -0.063100000000 -0.017270000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 125.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.188400000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.036000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 63.469170000000 </activation1>
+			<activation2> 21.276600000000 </activation2>
+			<mass> 0.026920000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_t_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.027900000000 -0.140300000000 -0.039200000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.010890000000 -0.068750000000 -0.017020000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 118.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.183000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.043000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 78.287850000000 </activation1>
+			<activation2> 23.752970000000 </activation2>
+			<mass> 0.024480000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_t_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.008400000000 -0.122300000000 -0.034800000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.010780000000 -0.073800000000 -0.016750000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 165.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.185300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.053000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 78.287850000000 </activation1>
+			<activation2> 23.752970000000 </activation2>
+			<mass> 0.034750000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_t_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.013200000000 -0.100600000000 -0.037200000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.011110000000 -0.064280000000 -0.017520000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 157.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.183300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.028000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 112.516460000000 </activation1>
+			<activation2> 28.328610000000 </activation2>
+			<mass> 0.033010000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_t_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.007100000000 -0.041800000000 -0.019000000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.011120000000 -0.054180000000 -0.018080000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 133.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.150000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.026000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 112.516460000000 </activation1>
+			<activation2> 28.328610000000 </activation2>
+			<mass> 0.022730000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_t_6">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.011600000000 -0.022700000000 -0.006100000000 </location>
+					<body> thorax </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.011110000000 -0.064280000000 -0.017520000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 198.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.144900000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.036000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.032430000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_c_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.062980000000 0.010750000000 -0.016360000000 </location>
+					<body> clavicle_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.011840000000 -0.088690000000 -0.015550000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 179.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.136300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.017000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.027690000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pect_maj_c_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.082760000000 0.013090000000 -0.014960000000 </location>
+					<body> clavicle_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.011120000000 -0.054180000000 -0.018080000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ter_lat_pec </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 113.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.109100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.014000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.013990000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_med_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.007140000000 -0.148540000000 -0.000070000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015610000000 -0.007710000000 0.023640000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 263.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.080700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.087500000000 </tendon_slack_length>
+			<pennation_angle> 0.296705972839 </pennation_angle>
+			<activation1> 45.410560000000 </activation1>
+			<activation2> 17.482520000000 </activation2>
+			<mass> 0.018400000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_med_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.006220000000 -0.124020000000 0.002960000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015610000000 -0.007710000000 0.023640000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 256.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.077300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.112200000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.017650000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_med_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.009360000000 -0.241840000000 0.013210000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015610000000 -0.007710000000 0.023640000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 240.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.060200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.010700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.011950000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_med_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.002640000000 -0.199890000000 0.016150000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015610000000 -0.007710000000 0.023640000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 211.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.074600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.040400000000 </tendon_slack_length>
+			<pennation_angle> 0.139626340160 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.013950000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_med_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.005800000000 -0.156460000000 0.009090000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015610000000 -0.007710000000 0.023640000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 107.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.080700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.073800000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.007700000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachialis_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.009540000000 -0.148540000000 0.006250000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015360000000 -0.044430000000 -0.006100000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow_circ </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 314.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.087600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.080700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.029100000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachialis_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.002850000000 -0.154000000000 -0.005170000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.019110000000 -0.042060000000 -0.003290000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow_circ </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 158.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.095300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.059200000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.015900000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachialis_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.008700000000 -0.180350000000 -0.000330000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.024920000000 -0.030760000000 -0.000370000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow_circ </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 157.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.087000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.039400000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.014650000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachialis_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.000180000000 -0.190780000000 -0.001040000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015810000000 -0.041660000000 -0.004600000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow_circ </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 87.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.075800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.031700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.007000000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachialis_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.012680000000 -0.221340000000 0.005140000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.022180000000 -0.037560000000 -0.001860000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow_circ </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 101.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.061900000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.020900000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.006600000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachialis_6">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.001980000000 -0.229670000000 0.000210000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.024450000000 -0.032730000000 -0.002830000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow_circ </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 104.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.047200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.035000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.004100000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachialis_7">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.012610000000 -0.236600000000 0.003990000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.012860000000 -0.039660000000 -0.005730000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow_circ </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 118.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.062100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.007600000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.006500000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachiorad_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.002820000000 -0.199680000000 0.008750000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.008120000000 -0.225130000000 -0.070370000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 30.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.161300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.119700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.004700000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachiorad_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.004460000000 -0.217500000000 0.015320000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.008120000000 -0.225130000000 -0.070370000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 82.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.161300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.119700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.014000000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="brachiorad_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.006000000000 -0.234300000000 0.016490000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.008120000000 -0.225130000000 -0.070370000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 52.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.106600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.154200000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.005970000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pron_teres_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.037690000000 -0.276860000000 0.006350000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.020770000000 -0.105310000000 0.007810000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.020770000000 -0.105310000000 0.007820000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ulna_radius </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 510.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.061000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.085100000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.027500000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pron_teres_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> -0.012200000000 -0.024540000000 -0.015630000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.022290000000 -0.081570000000 0.003410000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> ulna_radius </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 141.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.039100000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.048400000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.004330000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supinator_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.021120000000 -0.083470000000 -0.008820000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018100000000 -0.081310000000 0.005880000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> supinator </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 47.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.026700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.025400000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.000840000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supinator_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.021100000000 -0.066800000000 -0.008600000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.018500000000 -0.067800000000 0.006200000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> supinator </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 232.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.026000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.023100000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.003640000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supinator_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.020520000000 -0.050210000000 -0.008860000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.017850000000 -0.056860000000 0.004410000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> supinator </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 126.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.025200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.015000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.003360000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supinator_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.019300000000 -0.040580000000 -0.007510000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.016140000000 -0.048500000000 0.001120000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> supinator </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 148.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.026300000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.014500000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.002960000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="supinator_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.017940000000 -0.030970000000 -0.006120000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.014340000000 -0.040150000000 -0.002110000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> supinator </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 285.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.027400000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.013900000000 </tendon_slack_length>
+			<pennation_angle> 0.034906585040 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.006760000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pron_quad_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.015130000000 -0.206990000000 -0.017340000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.026160000000 -0.199420000000 -0.054860000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> pron_quad </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 73.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.037700000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.001000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.001630000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pron_quad_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.016500000000 -0.211950000000 -0.017490000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.031460000000 -0.215730000000 -0.061080000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> pron_quad </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 178.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.038600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.001000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.003470000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="pron_quad_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.017400000000 -0.220710000000 -0.022290000000 </location>
+					<body> radius_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.034320000000 -0.226840000000 -0.064870000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> pron_quad </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 219.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.035200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.001000000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.004930000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_lat_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.006310000000 -0.054950000000 0.011000000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.015870000000 0.007930000000 0.020900000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 153.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.075800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.170700000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.012500000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_lat_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.006310000000 -0.054950000000 0.011000000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.014980000000 0.005400000000 0.022100000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 410.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.076600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.177000000000 </tendon_slack_length>
+			<pennation_angle> 0.087266462600 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.033200000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_lat_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.006310000000 -0.054950000000 0.011000000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.005800000000 0.000000000000 0.020150000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 219.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.065600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.191100000000 </tendon_slack_length>
+			<pennation_angle> 0.174532925199 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.015200000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_lat_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.012110000000 -0.095120000000 0.010480000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.005800000000 0.000000000000 0.020150000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 275.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.063800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.157000000000 </tendon_slack_length>
+			<pennation_angle> 0.174532925199 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.016200000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="tric_lat_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.012110000000 -0.095120000000 0.010480000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> -0.008140000000 0.004060000000 0.018840000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			<PathWrapSet>
+			<objects>
+				<PathWrap>
+					<wrap_object> elbow </wrap_object>
+				</PathWrap>
+			</objects>
+			</PathWrapSet>
+			</GeometryPath>
+			<max_isometric_force> 87.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.063800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.157000000000 </tendon_slack_length>
+			<pennation_angle> 0.296705972839 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.005850000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="anconeus_1">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.013370000000 -0.292270000000 0.012910000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.006500000000 -0.020740000000 0.010470000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 31.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.025200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.006400000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.000830000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="anconeus_2">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.011530000000 -0.296140000000 0.011490000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.007690000000 -0.023940000000 0.009240000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 70.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.020200000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.008000000000 </tendon_slack_length>
+			<pennation_angle> 0.261799387799 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.001500000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="anconeus_3">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.012010000000 -0.286890000000 0.014480000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.005300000000 -0.017630000000 0.011690000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 25.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.022800000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.004300000000 </tendon_slack_length>
+			<pennation_angle> 0.000000000000 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.000600000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="anconeus_4">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.015920000000 -0.296780000000 0.006320000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.015300000000 -0.055320000000 0.002830000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 118.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.027000000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.030000000000 </tendon_slack_length>
+			<pennation_angle> 0.314159265359 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.002200000000 </mass>
+		</Schutte1993Muscle>
+		<Schutte1993Muscle name="anconeus_5">
+			<GeometryPath>
+			<PathPointSet>
+			<objects>
+				<PathPoint>
+					<location> 0.014460000000 -0.297650000000 0.008180000000 </location>
+					<body> humerus_r </body>
+				</PathPoint>
+				<PathPoint>
+					<location> 0.010900000000 -0.040410000000 0.006890000000 </location>
+					<body> ulna_r </body>
+				</PathPoint>
+			</objects>
+			</PathPointSet>
+			</GeometryPath>
+			<max_isometric_force> 118.000000000000 </max_isometric_force>
+			<optimal_fiber_length> 0.026600000000 </optimal_fiber_length>
+			<tendon_slack_length> 0.020000000000 </tendon_slack_length>
+			<pennation_angle> 0.401425727959 </pennation_angle>
+			<activation1> 62.324930000000 </activation1>
+			<activation2> 21.008400000000 </activation2>
+			<mass> 0.003330000000 </mass>
+		</Schutte1993Muscle>
+	</objects>
+	</ForceSet>
+			<gravity>0.0 -9.80665 0.0</gravity>
+			<BodySet>
+			<objects>
+				<Body name="ground">
+					<mass> 0.000000000000 </mass>
+					<mass_center> 0.000000000000 0.000000000000 0.000000000000 </mass_center>
+					<inertia_xx> 0.000000000000 </inertia_xx>
+					<inertia_yy> 0.000000000000 </inertia_yy>
+					<inertia_zz> 0.000000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint/>
+				</Body>
+				<Body name="thorax">
+					<mass> 20.000000000000 </mass>
+					<mass_center> 0.000000000000 -0.148600000000 0.059100000000 </mass_center>
+					<inertia_xx> 1.298410000000 </inertia_xx>
+					<inertia_yy> 0.552450000000 </inertia_yy>
+					<inertia_zz> 1.298410000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+						<WeldJoint name="base">
+							<parent_body> ground </parent_body>
+							<location_in_parent> 0.000000000000 0.000000000000 0.000000000000 </location_in_parent>
+							<orientation_in_parent> 0.000000000000 0.000000000000 0.000000000000 </orientation_in_parent>
+							<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+							<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+						</WeldJoint>
+					</Joint>
+					<WrapObjectSet>
+					<objects>
+						<WrapEllipsoid name="serr_ant">
+							<dimensions> 0.14700000 0.20790000 0.09440000 </dimensions>
+							<active> true </active>
+							<xyz_body_rotation> 0.00000000 0.00000000 0.00000000 </xyz_body_rotation>
+							<translation> 0.00000000 -0.14860000 0.05910000 </translation>
+						</WrapEllipsoid>
+					</objects>
+					</WrapObjectSet>
+				</Body>
+				<Body name="clavicle_1">
+					<mass> 0.000000000000 </mass>
+					<mass_center> 0.000000000000 0.000000000000 0.000000000000 </mass_center>
+					<inertia_xx> 0.000000000000 </inertia_xx>
+					<inertia_yy> 0.000000000000 </inertia_yy>
+					<inertia_zz> 0.000000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+						<WeldJoint name="sc1">
+							<parent_body> thorax </parent_body>
+							<location_in_parent> 0.001400000000 -0.015200000000 0.002800000000 </location_in_parent>
+							<orientation_in_parent> 0.000000000000 -0.382925237888 0.000000000000 </orientation_in_parent>
+							<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+							<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+						</WeldJoint>
+					</Joint>
+				</Body>
+				<Body name="clavicle_2">
+					<mass> 0.000000000000 </mass>
+					<mass_center> 0.000000000000 0.000000000000 0.000000000000 </mass_center>
+					<inertia_xx> 0.000000000000 </inertia_xx>
+					<inertia_yy> 0.000000000000 </inertia_yy>
+					<inertia_zz> 0.000000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+						<WeldJoint name="sc2">
+							<parent_body> clavicle_1 </parent_body>
+							<location_in_parent> 0.000000000000 0.000000000000 0.000000000000 </location_in_parent>
+							<orientation_in_parent> 0.000000000000 0.000000000000 0.106849056807 </orientation_in_parent>
+							<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+							<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+						</WeldJoint>
+					</Joint>
+				</Body>
+				<Body name="clavicle_r">
+					<mass> 0.156000000000 </mass>
+					<mass_center> 0.098300000000 0.016700000000 0.004200000000 </mass_center>
+					<inertia_xx> 0.000006400000 </inertia_xx>
+					<inertia_yy> 0.000026300000 </inertia_yy>
+					<inertia_zz> 0.000024300000 </inertia_zz>
+					<inertia_xy> -0.000006700000 </inertia_xy>
+					<inertia_xz> -0.000009500000 </inertia_xz>
+					<inertia_yz> 0.000002900000 </inertia_yz>
+					<Joint>
+						<WeldJoint name="sc3">
+							<parent_body> clavicle_2 </parent_body>
+							<location_in_parent> 0.000000000000 0.000000000000 0.000000000000 </location_in_parent>
+							<orientation_in_parent> 0.001733967159 0.000000000000 0.000000000000 </orientation_in_parent>
+							<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+							<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+						</WeldJoint>
+					</Joint>
+					<VisibleObject name="">
+						<geometry_files> rclavicle.vtp </geometry_files>
+						<scale_factors> 1.000000000000 1.000000000000 1.000000000000 </scale_factors>
+					</VisibleObject>
+				</Body>
+				<Body name="scapula_1">
+					<mass> 0.000000000000 </mass>
+					<mass_center> 0.000000000000 0.000000000000 0.000000000000 </mass_center>
+					<inertia_xx> 0.000000000000 </inertia_xx>
+					<inertia_yy> 0.000000000000 </inertia_yy>
+					<inertia_zz> 0.000000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+						<WeldJoint name="ac1">
+							<parent_body> clavicle_r </parent_body>
+							<location_in_parent> 0.207700000000 -0.000100000000 0.028200000000 </location_in_parent>
+							<orientation_in_parent> 0.000000000000 0.621396694531 0.000000000000 </orientation_in_parent>
+							<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+							<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+						</WeldJoint>
+					</Joint>
+				</Body>
+				<Body name="scapula_2">
+					<mass> 0.000000000000 </mass>
+					<mass_center> 0.000000000000 0.000000000000 0.000000000000 </mass_center>
+					<inertia_xx> 0.000000000000 </inertia_xx>
+					<inertia_yy> 0.000000000000 </inertia_yy>
+					<inertia_zz> 0.000000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+						<WeldJoint name="ac2">
+							<parent_body> scapula_1 </parent_body>
+							<location_in_parent> 0.000000000000 0.000000000000 0.000000000000 </location_in_parent>
+							<orientation_in_parent> 0.000000000000 0.000000000000 0.238621746945 </orientation_in_parent>
+							<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+							<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+						</WeldJoint>
+					</Joint>
+				</Body>
+				<Body name="scapula_r">
+					<mass> 0.705400000000 </mass>
+					<mass_center> -0.053000000000 -0.022900000000 -0.024700000000 </mass_center>
+					<inertia_xx> 0.001000000000 </inertia_xx>
+					<inertia_yy> 0.001000000000 </inertia_yy>
+					<inertia_zz> 0.001000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+						<WeldJoint name="ac3">
+							<parent_body> scapula_2 </parent_body>
+							<location_in_parent> 0.000000000000 0.000000000000 0.000000000000 </location_in_parent>
+							<orientation_in_parent> 0.117278097219 0.000000000000 0.000000000000 </orientation_in_parent>
+							<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+							<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+						</WeldJoint>
+					</Joint>
+					<VisibleObject name="">
+						<geometry_files> rscapula.vtp </geometry_files>
+						<scale_factors> 1.000000000000 1.000000000000 1.000000000000 </scale_factors>
+					</VisibleObject>
+				</Body>
+				<Body name="humerus_1">
+					<mass> 0.000000000000 </mass>
+					<mass_center> 0.000000000000 0.000000000000 0.000000000000 </mass_center>
+					<inertia_xx> 0.000000000000 </inertia_xx>
+					<inertia_yy> 0.000000000000 </inertia_yy>
+					<inertia_zz> 0.000000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+				<CustomJoint name="gh1">
+					<reverse> false </reverse>
+					<parent_body> scapula_r </parent_body>
+					<location_in_parent> 0.002000000000 -0.023000000000 -0.043900000000 </location_in_parent>
+					<orientation_in_parent> 0.000000000000 0.000000000000 0.000000000000 </orientation_in_parent>
+					<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+					<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+					<!--Generalized coordinates parameterizing this joint.-->
+					<CoordinateSet>
+					<objects>
+								<Coordinate name="GH_y">
+									<default_value> 0.349065850399 </default_value>
+									<initial_value> 0.349065850399 </initial_value>
+									<range> -1.570796326795 1.570796326795 </range>
+									<keys> g_key rightmouse_button </keys>
+									<clamped> true </clamped>
+									<locked> false </locked>
+								</Coordinate>
+					</objects>
+					</CoordinateSet>
+							<SpatialTransform>
+								<TransformAxis name="rotation1">
+									<axis> 1.000000000000 0.000000000000 0.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<axis> 0.000000000000 1.000000000000 0.000000000000 </axis>
+									<function name="f1">
+										<LinearFunction>
+											<coefficients> 1.000000 0.000000 </coefficients>
+										</LinearFunction>
+									</function>
+									<coordinates> GH_y </coordinates>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<axis> 0.000000000000 0.000000000000 1.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation1">
+									<axis> 1.0 0.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<axis> 0.0 1.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<axis> 0.0 0.0 1.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+				</Body>
+				<Body name="humerus_2">
+					<mass> 0.000000000000 </mass>
+					<mass_center> 0.000000000000 0.000000000000 0.000000000000 </mass_center>
+					<inertia_xx> 0.000000000000 </inertia_xx>
+					<inertia_yy> 0.000000000000 </inertia_yy>
+					<inertia_zz> 0.000000000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+				<CustomJoint name="gh2">
+					<reverse> false </reverse>
+					<parent_body> humerus_1 </parent_body>
+					<location_in_parent> 0.000000000000 0.000000000000 0.000000000000 </location_in_parent>
+					<orientation_in_parent> 0.000000000000 0.000000000000 0.000000000000 </orientation_in_parent>
+					<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+					<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+					<!--Generalized coordinates parameterizing this joint.-->
+					<CoordinateSet>
+					<objects>
+								<Coordinate name="GH_z">
+									<default_value> 0.523598775598 </default_value>
+									<initial_value> 0.523598775598 </initial_value>
+									<range> 0.087266462600 1.570796326795 </range>
+									<keys> g_key leftmouse_button </keys>
+									<clamped> true </clamped>
+									<locked> false </locked>
+								</Coordinate>
+					</objects>
+					</CoordinateSet>
+							<SpatialTransform>
+								<TransformAxis name="rotation1">
+									<axis> 1.000000000000 0.000000000000 0.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<axis> 0.000000000000 1.000000000000 0.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<axis> 0.000000000000 0.000000000000 1.000000000000 </axis>
+									<function name="f1">
+										<LinearFunction>
+											<coefficients> 1.000000 0.000000 </coefficients>
+										</LinearFunction>
+									</function>
+									<coordinates> GH_z </coordinates>
+								</TransformAxis>
+								<TransformAxis name="translation1">
+									<axis> 1.0 0.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<axis> 0.0 1.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<axis> 0.0 0.0 1.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+				</Body>
+				<Body name="humerus_r">
+					<mass> 2.051900000000 </mass>
+					<mass_center> 0.006400000000 -0.077600000000 -0.003600000000 </mass_center>
+					<inertia_xx> 0.013200000000 </inertia_xx>
+					<inertia_yy> 0.001988000000 </inertia_yy>
+					<inertia_zz> 0.013200000000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+				<CustomJoint name="gh3">
+					<reverse> false </reverse>
+					<parent_body> humerus_2 </parent_body>
+					<location_in_parent> 0.000000000000 0.000000000000 0.000000000000 </location_in_parent>
+					<orientation_in_parent> 0.000000000000 0.000000000000 0.000000000000 </orientation_in_parent>
+					<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+					<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+					<!--Generalized coordinates parameterizing this joint.-->
+					<CoordinateSet>
+					<objects>
+								<Coordinate name="GH_yy">
+									<default_value> -0.523598775598 </default_value>
+									<initial_value> -0.523598775598 </initial_value>
+									<range> -0.959931088597 1.221730476396 </range>
+									<keys> g_key middlemouse_button </keys>
+									<clamped> true </clamped>
+									<locked> false </locked>
+								</Coordinate>
+					</objects>
+					</CoordinateSet>
+							<SpatialTransform>
+								<TransformAxis name="rotation1">
+									<axis> 1.000000000000 0.000000000000 0.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<axis> 0.000000000000 1.000000000000 0.000000000000 </axis>
+									<function name="f1">
+										<LinearFunction>
+											<coefficients> 1.000000 0.000000 </coefficients>
+										</LinearFunction>
+									</function>
+									<coordinates> GH_yy </coordinates>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<axis> 0.000000000000 0.000000000000 1.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation1">
+									<axis> 1.0 0.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<axis> 0.0 1.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<axis> 0.0 0.0 1.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject name="">
+						<geometry_files> rhumerus.vtp </geometry_files>
+						<scale_factors> 1.000000000000 1.000000000000 1.000000000000 </scale_factors>
+					</VisibleObject>
+					<WrapObjectSet>
+					<objects>
+						<WrapSphere name="deltoid">
+							<radius> 0.02720000 </radius>
+							<active> true </active>
+							<xyz_body_rotation> -0.19303342 -0.23806291 -0.38571776 </xyz_body_rotation>
+							<translation> 0.00220000 -0.00090000 -0.00180000 </translation>
+						</WrapSphere>
+						<WrapSphere name="inf_sup_sub">
+							<radius> 0.02310000 </radius>
+							<active> true </active>
+							<xyz_body_rotation> -0.19303342 -0.23806291 -0.38571776 </xyz_body_rotation>
+							<translation> -0.00170000 0.00180000 -0.00130000 </translation>
+						</WrapSphere>
+						<WrapCylinder name="infra_cyl">
+							<radius> 0.01400000 </radius>
+							<length> 0.12000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> 1.56643300 0.00610865 -0.95312430 </xyz_body_rotation>
+							<translation> 0.00540000 -0.02300000 -0.00440000 </translation>
+							<quadrant> -x </quadrant>
+						</WrapCylinder>
+						<WrapCylinder name="ter_min_cyl">
+							<radius> 0.01500000 </radius>
+							<length> 0.10000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> 1.56643300 0.00610865 -1.47672308 </xyz_body_rotation>
+							<translation> 0.00540000 -0.02300000 -0.00440000 </translation>
+							<quadrant> -x </quadrant>
+						</WrapCylinder>
+						<WrapCylinder name="ter_lat_pec">
+							<radius> 0.01000000 </radius>
+							<length> 0.10000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> 1.56643300 0.00610865 -0.95312430 </xyz_body_rotation>
+							<translation> 0.00570000 -0.07300000 -0.00420000 </translation>
+						</WrapCylinder>
+					</objects>
+					</WrapObjectSet>
+				</Body>
+				<Body name="ulna_r">
+					<mass> 0.546400000000 </mass>
+					<mass_center> -0.000300000000 -0.063400000000 -0.003900000000 </mass_center>
+					<inertia_xx> 0.003058500000 </inertia_xx>
+					<inertia_yy> 0.000453250000 </inertia_yy>
+					<inertia_zz> 0.003058500000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+				<CustomJoint name="hu">
+					<reverse> false </reverse>
+					<parent_body> humerus_r </parent_body>
+					<location_in_parent> 0.005800000000 -0.290700000000 0.004900000000 </location_in_parent>
+					<orientation_in_parent> 0.000000000000 0.000000000000 0.000000000000 </orientation_in_parent>
+					<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+					<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+					<!--Generalized coordinates parameterizing this joint.-->
+					<CoordinateSet>
+					<objects>
+								<Coordinate name="EL_x">
+									<default_value> 0.698131700798 </default_value>
+									<initial_value> 0.698131700798 </initial_value>
+									<range> 0.087266462600 2.443460952792 </range>
+									<keys> e_key leftmouse_button </keys>
+									<clamped> true </clamped>
+									<locked> false </locked>
+								</Coordinate>
+					</objects>
+					</CoordinateSet>
+							<SpatialTransform>
+								<TransformAxis name="rotation1">
+									<axis> 0.999766120995 0.008446001022 -0.019909002409 </axis>
+									<function name="f1">
+										<LinearFunction>
+											<coefficients> 1.000000 0.000000 </coefficients>
+										</LinearFunction>
+									</function>
+									<coordinates> EL_x </coordinates>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<axis> 0.000000000000 1.000000000000 0.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<axis> 0.000000000000 0.000000000000 1.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation1">
+									<axis> 1.0 0.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<axis> 0.0 1.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<axis> 0.0 0.0 1.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject name="">
+						<geometry_files> rulna.vtp </geometry_files>
+						<scale_factors> 1.000000000000 1.000000000000 1.000000000000 </scale_factors>
+					</VisibleObject>
+					<WrapObjectSet>
+					<objects>
+						<WrapCylinder name="elbow">
+							<radius> 0.01900000 </radius>
+							<length> 0.05000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> -2.51152879 1.54653625 2.79252680 </xyz_body_rotation>
+							<translation> 0.00000000 0.00000000 0.00000000 </translation>
+							<quadrant> y </quadrant>
+						</WrapCylinder>
+						<WrapCylinder name="elbow_circ">
+							<radius> 0.01500000 </radius>
+							<length> 0.05000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> 0.63006386 -1.54653625 0.00000000 </xyz_body_rotation>
+							<translation> 0.00000000 0.00000000 0.00000000 </translation>
+						</WrapCylinder>
+						<WrapCylinder name="pron_quad">
+							<radius> 0.00700000 </radius>
+							<length> 0.10000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> -1.28805299 -0.23265239 0.00000000 </xyz_body_rotation>
+							<translation> 0.03650000 -0.20640000 -0.05770000 </translation>
+							<quadrant> y </quadrant>
+						</WrapCylinder>
+					</objects>
+					</WrapObjectSet>
+				</Body>
+				<Body name="radius_r">
+					<mass> 0.546400000000 </mass>
+					<mass_center> 0.010600000000 -0.117900000000 -0.012900000000 </mass_center>
+					<inertia_xx> 0.003058500000 </inertia_xx>
+					<inertia_yy> 0.000453250000 </inertia_yy>
+					<inertia_zz> 0.003058500000 </inertia_zz>
+					<inertia_xy> 0.000000000000 </inertia_xy>
+					<inertia_xz> 0.000000000000 </inertia_xz>
+					<inertia_yz> 0.000000000000 </inertia_yz>
+					<Joint>
+				<CustomJoint name="ur">
+					<reverse> false </reverse>
+					<parent_body> ulna_r </parent_body>
+					<location_in_parent> 0.017100000000 -0.013300000000 -0.016300000000 </location_in_parent>
+					<orientation_in_parent> 0.000000000000 0.000000000000 0.000000000000 </orientation_in_parent>
+					<location> 0.000000000000 0.000000000000 0.000000000000 </location>
+					<orientation> 0.000000000000 0.000000000000 0.000000000000 </orientation>
+					<!--Generalized coordinates parameterizing this joint.-->
+					<CoordinateSet>
+					<objects>
+								<Coordinate name="PS_y">
+									<default_value> 1.570796326795 </default_value>
+									<initial_value> 1.570796326795 </initial_value>
+									<range> 0.087266462600 2.792526803191 </range>
+									<keys> p_key leftmouse_button </keys>
+									<clamped> true </clamped>
+									<locked> false </locked>
+								</Coordinate>
+					</objects>
+					</CoordinateSet>
+							<SpatialTransform>
+								<TransformAxis name="rotation1">
+									<axis> -0.113294979144 0.974058820690 0.195891963939 </axis>
+									<function name="f1">
+										<LinearFunction>
+											<coefficients> 1.000000 0.000000 </coefficients>
+										</LinearFunction>
+									</function>
+									<coordinates> PS_y </coordinates>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<axis> 0.000000000000 0.000000000000 1.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<axis> 1.000000000000 0.000000000000 0.000000000000 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation1">
+									<axis> 1.0 0.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<axis> 0.0 1.0 0.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<axis> 0.0 0.0 1.0 </axis>
+									<function>
+										<Constant>
+											<value> 0.000000 </value>
+										</Constant>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject name="">
+						<geometry_files> rradius.vtp </geometry_files>
+						<scale_factors> 1.000000000000 1.000000000000 1.000000000000 </scale_factors>
+					</VisibleObject>
+					<WrapObjectSet>
+					<objects>
+						<WrapCylinder name="radius">
+							<radius> 0.00920000 </radius>
+							<length> 0.20000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> -1.61285876 -0.20228366 -1.77709424 </xyz_body_rotation>
+							<translation> 0.00350000 -0.03220000 -0.00030000 </translation>
+							<quadrant> -x </quadrant>
+						</WrapCylinder>
+						<WrapCylinder name="supinator">
+							<radius> 0.00900000 </radius>
+							<length> 0.20000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> -1.48876585 0.00174533 -0.00000000 </xyz_body_rotation>
+							<translation> 0.00340000 -0.11960000 -0.00690000 </translation>
+							<quadrant> -y </quadrant>
+						</WrapCylinder>
+						<WrapCylinder name="ulna_radius">
+							<radius> 0.00710000 </radius>
+							<length> 0.10000000 </length>
+							<active> true </active>
+							<xyz_body_rotation> 1.54095120 0.25621433 2.67035376 </xyz_body_rotation>
+							<translation> 0.01460000 -0.08910000 0.00030000 </translation>
+							<quadrant> -x </quadrant>
+						</WrapCylinder>
+					</objects>
+					</WrapObjectSet>
+				</Body>
+			</objects>
+			</BodySet>
+			<ConstraintSet>
+			<objects>
+			</objects>
+			</ConstraintSet>
+			<MarkerSet>
+				<objects>
+				</objects>
+			</MarkerSet>
+</Model>
+</OpenSimDocument>
